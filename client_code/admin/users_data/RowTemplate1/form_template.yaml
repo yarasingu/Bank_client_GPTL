@@ -1,0 +1,21 @@
+is_package: true
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''email'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''last_login'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: OJLQEN}
+  data_bindings:
+  - {property: text, code: 'self.item[''signed_up'']'}

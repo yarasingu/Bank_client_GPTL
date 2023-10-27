@@ -1,0 +1,112 @@
+correct_dependency_ids: {}
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/anvil/users.yml
+  client_config: {allow_signup: true, enable_automatically: true, use_email: true,
+    confirm_email: true, use_google: true, require_secure_passwords: true}
+  server_config: {user_table: users}
+- source: /runtime/services/google.yml
+  client_config: {}
+  server_config: {}
+startup: {type: form, module: borrower_registration_form.star_1_borrower_registration_form}
+package_name: bank_client
+allow_embedding: false
+name: Clone of Clone of bank_client
+runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
+  server_spec: null}
+metadata: {title: 'P2P Bank ', description: this app provide services to person who are ready to invest and ready to give loan}
+startup_form: null
+db_schema:
+  users:
+    client: full
+    server: full
+    columns:
+    - name: email
+      admin_ui: {order: 0, width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {order: 1, width: 200}
+      type: bool
+    - name: last_login
+      admin_ui: {order: 2, width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {order: 3, width: 200}
+      type: string
+    - name: n_password_failures
+      admin_ui: {order: 4, width: 200}
+      type: number
+    - name: confirmed_email
+      admin_ui: {order: 5, width: 200}
+      type: bool
+    - name: signed_up
+      admin_ui: {order: 6, width: 200}
+      type: datetime
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
+    title: Users
+  user_profile:
+    client: full
+    server: full
+    columns:
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: number
+    - name: full_name
+      admin_ui: {width: 200}
+      type: string
+    - name: mobile
+      admin_ui: {width: 200}
+      type: number
+    - name: mobile_check
+      admin_ui: {width: 200}
+      type: bool
+    - name: user_photo
+      admin_ui: {width: 200}
+      type: media
+    - name: gender
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: date_of_birth
+      admin_ui: {width: 200, order: 8}
+      type: date
+    - name: aadhaar_photo
+      admin_ui: {width: 200, order: 12}
+      type: media
+    - name: pan_photo
+      admin_ui: {width: 200, order: 13}
+      type: media
+    - name: profile_status
+      admin_ui: {width: 200}
+      type: bool
+    - name: aadhaar_no
+      admin_ui: {width: 200, order: 14}
+      type: number
+    - name: pan_number
+      admin_ui: {width: 200, order: 15}
+      type: string
+    - name: email_user
+      admin_ui: {width: 200, order: 16}
+      type: string
+    title: user_profile
+  borrower:
+    title: borrower
+    client: none
+    server: full
+    columns:
+    - name: borrower_id
+      admin_ui: {width: 200, order: 0}
+      type: number
+    - name: coustmer_id
+      admin_ui: {width: 200, order: 1}
+      type: link_multiple
+      target: user_profile
+    - name: email
+      admin_ui: {width: 200, order: 2}
+      type: link_single
+      target: users
+renamed: true

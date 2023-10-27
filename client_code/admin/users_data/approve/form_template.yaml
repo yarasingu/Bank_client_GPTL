@@ -1,0 +1,24 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - name: image_1
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'SKSJRK,RNLLRQ'}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+  components:
+  - name: login_signu_landing_form_button
+    properties: {text: Login/SignUp}
+    type: Button
+    layout_properties: {}
+    event_bindings: {click: login_signu_landing_form_button_click}
