@@ -10,4 +10,5 @@ import anvil.server
 
 @anvil.server.callable
 def fetch_users_data():
+  print("method was called")
   return app_tables.users.search()
