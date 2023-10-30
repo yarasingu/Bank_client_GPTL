@@ -1,0 +1,169 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- name: button_1
+  properties: {text: Home, align: right, bold: true, role: tonal-button}
+  type: Button
+  layout_properties:
+    col_widths: {}
+    grid_position: LZKDRM,QHALTP
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: ' What is your residential status ?', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_2
+  layout_properties:
+    col_widths: {}
+    grid_position: PFIDZN,DGHJYB
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: none
+    border: ''
+    enabled: true
+    foreground: ''
+    items: [Resident Indian (RI), Non Resident Indian (NRI), Overseas Citizen Of India (OCI)]
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_1
+  layout_properties: {grid_position: 'QTWKAZ,YMPFST'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Minimum Amount, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_4
+  layout_properties:
+    col_widths: {}
+    grid_position: URYDGT,BTWAHS
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: ['5000', '10000', '20000', '50000', '100000', '150000', '200000', '250000',
+      '300000', '350000', '400000', '450000', '500000', '550000', '600000', '650000',
+      '700000', '750000', '800000', '850000', '900000', '950000', '1000000']
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_1_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: URYDGT,JSYDZT
+  data_bindings:
+  - {property: selected_value, code: 'self.item[''miniamount'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Maximum Amount, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_5
+  layout_properties:
+    col_widths: {}
+    grid_position: RIFDPA,FXDAEC
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: [12 Months, 24 Months, 36 Months, 48 Months, '']
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_3
+  layout_properties:
+    col_widths: {}
+    grid_position: RIFDPA,QZCNTC
+  data_bindings:
+  - {property: selected_value, code: 'self.item['''']', writeback: true}
+  - {property: selected_value, code: 'self.item[''tenure'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Tenure, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  name: label_6
+  layout_properties:
+    col_widths: {}
+    grid_position: XAMTRF,ELQQHP
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: [12 Months, 24 Months, 36 Months, 48 Months, '']
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: true
+  name: drop_down_3_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: XAMTRF,DVEKRQ
+  data_bindings:
+  - {property: selected_value, code: 'self.item[''tenure'']', writeback: true}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:angle-double-left'}
+  name: button_2
+  layout_properties:
+    col_widths: {}
+    grid_position: DUFTTD,DAWXAI
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: 'fa:angle-double-right'}
+  name: button_1_copy
+  layout_properties:
+    col_widths: {}
+    grid_position: DUFTTD,RERXNC
+  event_bindings: {click: button_1_copy_click}
+is_package: true

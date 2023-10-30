@@ -1,0 +1,125 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Business Loan, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_1
+  layout_properties:
+    col_widths: {}
+    grid_position: JDPBOR,LDBXSK
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Onetime Payment (Generally 30 days duration), font_size: null, font: '',
+    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
+    bold: false, underline: false, icon: ''}
+  name: label_2
+  layout_properties:
+    col_widths: {}
+    grid_position: EZQKSI,YGCOWL
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: []
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: false
+  name: drop_down_1
+  layout_properties: {grid_position: 'EZQKSI,NWEFNE'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: ' 3 Months EMI', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties:
+    col_widths: {}
+    grid_position: FWEHDT,PFDIVT
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: []
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: false
+  name: drop_down_2
+  layout_properties: {grid_position: 'FWEHDT,HOFJYS'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 6 Months EMI, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_5
+  layout_properties:
+    col_widths: {}
+    grid_position: ZOTHLR,SYDOGF
+- type: DropDown
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: []
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: false
+  name: drop_down_3
+  layout_properties: {grid_position: 'ZOTHLR,AHSGQD'}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:angle-double-left'}
+  name: button_2
+  layout_properties:
+    col_widths: {}
+    grid_position: UXJTKC,YPXGKN
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: 'fa:certificate'}
+  name: button_1
+  layout_properties:
+    col_widths: {}
+    grid_position: UXJTKC,LWSSAD
+is_package: true

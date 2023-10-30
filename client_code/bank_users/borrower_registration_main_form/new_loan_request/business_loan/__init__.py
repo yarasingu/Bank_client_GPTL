@@ -1,4 +1,4 @@
-from ._anvil_designer import new_loanTemplate
+from ._anvil_designer import business_loanTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class new_loan(new_loanTemplate):
+class business_loan(business_loanTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
