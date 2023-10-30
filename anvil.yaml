@@ -110,4 +110,7 @@ db_schema:
     - name: loan_type
       admin_ui: {width: 200, order: 3}
       type: string
+    - name: status
+      admin_ui: {width: 200, order: 4}
+      type: bool
 renamed: true
