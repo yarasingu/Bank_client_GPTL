@@ -8,6 +8,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: OVQEWJ,KAIHVG
+  event_bindings: {click: button_1_click}
 - name: spacer_1
   properties: {height: 32}
   type: Spacer
@@ -127,17 +128,9 @@ components:
   properties: {}
   name: label_16
   layout_properties: {grid_position: 'UZMEDY,MBLXIO'}
-- type: Label
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: 'Marrital Status:', font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: false, underline: false,
-    icon: ''}
-  name: label_17
-  layout_properties:
-    col_widths: {}
-    grid_position: QXSBXW,DDJQLU
-- type: Label
-  properties: {}
-  name: label_18
-  layout_properties: {grid_position: 'QXSBXW,PMBTNQ'}
+- name: button_1_copy_1
+  properties: {text: Submit, align: right, bold: true, role: tonal-button}
+  type: Button
+  layout_properties: {grid_position: 'QXSBXW,BCLRBO'}
+  event_bindings: {click: button_1_click}
 is_package: true

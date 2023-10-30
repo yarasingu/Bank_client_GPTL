@@ -8,6 +8,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: HJAOEA,HDCZRI
+  event_bindings: {click: button_1_copy_click}
 - name: button_1
   properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
@@ -17,6 +18,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: HSGGUZ,DSTRMU
+  event_bindings: {click: button_1_click}
 - name: spacer_1
   properties: {height: 32}
   type: Spacer

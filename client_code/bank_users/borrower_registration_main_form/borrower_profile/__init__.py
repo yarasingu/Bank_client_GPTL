@@ -14,12 +14,9 @@ class borrower_profile(borrower_profileTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    data=app_tables.borrower.search()
-   
-    full_name=self.label_2.text
-    email_id=self.label_4.text
-    mobile_no=self.label_6.text
-    date_of_birth=self.label_8.text
-    
-    city=self.label_10.text
-    upload_pan_card=self.label_12.text
+
+  def button_1_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.boorrower_edit_profile')
+
+  def button_1_copy_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form')

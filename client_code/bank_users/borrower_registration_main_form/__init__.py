@@ -14,3 +14,12 @@ class borrower_registration_main_form(borrower_registration_main_formTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def home_main_form_link_copy_1_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form')
+
+  def contact_main_form_link_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.new_loan_request')
+
+  def about_main_form_link_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.borrower_profile')

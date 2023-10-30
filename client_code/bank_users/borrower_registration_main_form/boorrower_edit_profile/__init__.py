@@ -14,3 +14,6 @@ class boorrower_edit_profile(boorrower_edit_profileTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def button_1_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form')

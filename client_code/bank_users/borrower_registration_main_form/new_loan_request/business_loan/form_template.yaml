@@ -113,6 +113,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: UXJTKC,YPXGKN
+  event_bindings: {click: button_2_click}
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,

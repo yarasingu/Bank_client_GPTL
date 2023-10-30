@@ -14,3 +14,12 @@ class loan_type(loan_typeTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def link_1_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.new_loan_request.k12_loan')
+
+  def link_2_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.new_loan_request.business_loan')
+
+  def button_2_click(self, **event_args):
+    open_form('bank_users.borrower_registration_main_form.new_loan_request')
