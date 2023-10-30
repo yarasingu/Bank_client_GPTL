@@ -1,4 +1,6 @@
-container: {type: ColumnPanel}
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
 components:
 - name: button_1
   properties: {text: Home, align: right, bold: true, role: tonal-button}
@@ -21,4 +23,82 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: KDHAAT,CKVRJM
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Full Name:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {grid_position: 'ZAHTSU,YHWPJW'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {grid_position: 'ZAHTSU,LLBNLX'}
+  data_bindings:
+  - {property: text, code: 'self.item[''fullname'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Email ID:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_3
+  layout_properties: {grid_position: 'JFGHKK,FPGJUV'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {grid_position: 'JFGHKK,LZOCYL'}
+  data_bindings:
+  - {property: text, code: 'self.item[''email_id'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Mobile No:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_5
+  layout_properties: {grid_position: 'ZZXLBX,XJHXPC'}
+- type: Label
+  properties: {}
+  name: label_6
+  layout_properties: {grid_position: 'ZZXLBX,BGDOZM'}
+  data_bindings:
+  - {property: text, code: 'self.item[''mobile_no'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Date Of Birth:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_7
+  layout_properties: {grid_position: 'ANEGHE,OIVWVJ'}
+- type: Label
+  properties: {}
+  name: label_8
+  layout_properties: {grid_position: 'ANEGHE,THXTDX'}
+  data_bindings:
+  - {property: text, code: 'self.item[''date_of_birth'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: City, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_9
+  layout_properties: {grid_position: 'JIPXWO,FEXTHJ'}
+- type: Label
+  properties: {}
+  name: label_10
+  layout_properties: {grid_position: 'JIPXWO,ZZNIPF'}
+  data_bindings:
+  - {property: text, code: 'self.item[''city'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Upload pan Card:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_11
+  layout_properties: {grid_position: 'TMVNCD,WJCPUH'}
+- type: Label
+  properties: {}
+  name: label_12
+  layout_properties: {grid_position: 'TMVNCD,FXCWVF'}
+  data_bindings:
+  - {property: text, code: 'self.item[''upload_pan_card'']'}
 is_package: true
