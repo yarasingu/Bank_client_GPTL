@@ -122,4 +122,13 @@ db_schema:
     - name: upload_pan_card
       admin_ui: {width: 200, order: 8}
       type: media
+    - name: gender
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: mother_tounge
+      admin_ui: {width: 200, order: 10}
+      type: string
+    - name: marrital_status
+      admin_ui: {width: 200, order: 11}
+      type: string
 renamed: true

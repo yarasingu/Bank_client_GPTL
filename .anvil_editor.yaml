@@ -33,6 +33,7 @@ unique_ids:
     borrower_registration_form.Form1: '1698315388445677081676573.6042'
     admin.users_data.RowTemplate1: '1698137023691965667429018.8483'
     bank_users.borrower_registration_main_form.borrower_profile: '1698653519986110665503267.72595'
+    bank_users.borrower_registration_main_form.new_loan: '1698662158540530088363841.0887'
     bank_users.borrower_registration_main_form: '1698653447467818497216406.7532'
     borrower_registration_form.Form12: '1698332096187873089103092.0122'
     bank_users.main_form: '1697785035081652136573149.4551'

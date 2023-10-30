@@ -2,18 +2,27 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
-- name: button_1
+- name: button_1_copy
   properties: {text: Home, align: right, bold: true, role: tonal-button}
   type: Button
   layout_properties:
     col_widths: {}
-    grid_position: HJAOEA,FDIUGM
+    grid_position: HJAOEA,HDCZRI
+- name: button_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: '', visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Button
+  layout_properties:
+    col_widths: {}
+    grid_position: HSGGUZ,DSTRMU
 - name: spacer_1
   properties: {height: 32}
   type: Spacer
   layout_properties:
     col_widths: {}
-    grid_position: PNDNDM,ZZWCMO
+    grid_position: PNDNDM,TKYEBB
 - name: label_1_copy_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: View Profile, font_size: null, font: '', spacing_above: small,
@@ -101,4 +110,43 @@ components:
   layout_properties: {grid_position: 'TMVNCD,FXCWVF'}
   data_bindings:
   - {property: text, code: 'self.item[''upload_pan_card'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Gender:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_13
+  layout_properties: {grid_position: 'ZTAFPA,GHVDYC'}
+- type: Label
+  properties: {}
+  name: label_14
+  layout_properties: {grid_position: 'ZTAFPA,WDMJPV'}
+  data_bindings:
+  - {property: text, code: 'self.item[''gender'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Mother Tounge:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_15
+  layout_properties: {grid_position: 'ZZYYSN,TIWZVY'}
+- type: Label
+  properties: {}
+  name: label_16
+  layout_properties: {grid_position: 'ZZYYSN,AQRDLE'}
+  data_bindings:
+  - {property: text, code: 'self.item[''mother_tounge'']'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Marrital Status:', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_17
+  layout_properties: {grid_position: 'BLHQIW,ILIRMK'}
+- type: Label
+  properties: {}
+  name: label_18
+  layout_properties: {grid_position: 'BLHQIW,NYSLTL'}
+  data_bindings:
+  - {property: text, code: 'self.item[''marrital_status'']'}
 is_package: true
