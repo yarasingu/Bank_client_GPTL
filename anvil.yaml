@@ -102,33 +102,12 @@ db_schema:
       admin_ui: {width: 200, order: 0}
       type: number
     - name: coustmer_id
-      admin_ui: {width: 200}
-      type: unresolved
-    - name: full_name
-      admin_ui: {width: 200, order: 3}
-      type: string
+      admin_ui: {width: 200, order: 1}
+      type: number
     - name: email_id
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {width: 200, order: 2}
       type: string
-    - name: mobile_no
-      admin_ui: {width: 200, order: 5}
-      type: string
-    - name: date_of_birth
-      admin_ui: {width: 200, order: 6}
-      type: string
-    - name: city
-      admin_ui: {width: 200, order: 7}
-      type: string
-    - name: upload_pan_card
-      admin_ui: {width: 200, order: 8}
-      type: media
-    - name: gender
-      admin_ui: {width: 200, order: 9}
-      type: string
-    - name: mother_tounge
-      admin_ui: {width: 200, order: 10}
-      type: string
-    - name: marrital_status
-      admin_ui: {width: 200, order: 11}
+    - name: loan_type
+      admin_ui: {width: 200, order: 3}
       type: string
 renamed: true

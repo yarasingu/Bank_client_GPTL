@@ -31,7 +31,7 @@ components:
       col_widths: {}
       grid_position: YBRDSP,HOLUNA
   - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Borrower, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
@@ -39,7 +39,7 @@ components:
     layout_properties: {grid_position: 'YBRDSP,JLWAJS'}
     event_bindings: {click: borrower_user_form_link_click}
   - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
+    properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Lendor, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}

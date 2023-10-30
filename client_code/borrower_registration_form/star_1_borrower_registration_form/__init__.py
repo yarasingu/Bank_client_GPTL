@@ -15,8 +15,12 @@ class star_1_borrower_registration_form(star_1_borrower_registration_formTemplat
 
     # Any code you write here will run before the form opens.
 
-  def button_1_click(self, **event_args):
+  def next_butto_for_step_2_click(self, **event_args):
     open_form('borrower_registration_form.star_1_borrower_registration_form1')
-    """This method is called when the button is clicked"""
+
+  def button_1_click(self, **event_args):
+    open_form('bank_users.user_form')
+
+
     
 

@@ -18,9 +18,12 @@ class user_form(user_formTemplate):
     anvil.users.logout()
     open_form('bank_users.main_form')
 
-  # this function is use for new borrower signup
+  # this function is use for new borrower signup and check the user already signup or not
   def borrower_user_form_link_click(self, **event_args):
     open_form('borrower_registration_form.star_1_borrower_registration_form')
+
+
+  
 
   def lendor_user_form_link_click(self, **event_args):
     open_form('lendor_registration_form.star_1_lendor_rgistration_form')
