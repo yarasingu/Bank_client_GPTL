@@ -1,3 +1,24 @@
 container: {type: ColumnPanel}
-components: []
+components:
+- name: button_1
+  properties: {text: Home, align: right, bold: true, role: tonal-button}
+  type: Button
+  layout_properties:
+    col_widths: {}
+    grid_position: HJAOEA,FDIUGM
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties:
+    col_widths: {}
+    grid_position: PNDNDM,ZZWCMO
+- name: label_1_copy_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: View Profile, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties:
+    col_widths: {}
+    grid_position: KDHAAT,CKVRJM
 is_package: true

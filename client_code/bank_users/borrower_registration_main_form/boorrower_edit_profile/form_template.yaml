@@ -1,3 +1,9 @@
 container: {type: ColumnPanel}
-components: []
+components:
+- name: button_1
+  properties: {text: Home, align: right, bold: true, role: tonal-button}
+  type: Button
+  layout_properties:
+    col_widths: {}
+    grid_position: OVQEWJ,KAIHVG
 is_package: true
