@@ -2,6 +2,10 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- name: button_3
+  properties: {text: button_3}
+  type: Button
+  layout_properties: {grid_position: 'CWHPTG,CQONGD'}
 - name: image_1_copy_1_copy_1
   properties: {role: null, vertical_align: center, height: 88, tooltip: '', border: '',
     foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
