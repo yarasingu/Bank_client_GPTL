@@ -123,7 +123,7 @@ components:
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: 'theme:On Primary Container', visible: true, text: Next, font_size: null,
     font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-    background: 'theme:On Primary', bold: true, underline: false, icon: 'fa:angle-double-right'}
+    background: '#0876E8', bold: true, underline: false, icon: 'fa:angle-double-right'}
   name: next_butto_for_step_2
   layout_properties: {grid_position: 'XJJGAJ,SNMTEQ'}
   event_bindings: {click: next_butto_for_step_2_click}

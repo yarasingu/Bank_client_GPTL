@@ -49,8 +49,8 @@ components:
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: 'fa:angle-double-left'}
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: 'fa:angle-double-left'}
   name: button_2
   layout_properties:
     col_widths: {}
@@ -59,8 +59,8 @@ components:
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
     foreground: '', visible: true, text: 'SUBMIT ', font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-    underline: false, icon: ''}
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: ''}
   name: button_1
   layout_properties:
     col_widths: {}
