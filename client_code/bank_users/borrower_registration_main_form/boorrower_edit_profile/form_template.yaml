@@ -36,10 +36,6 @@ components:
     col_widths: {}
     grid_position: FFAZCJ,TILVKS
 - type: Label
-  properties: {}
-  name: label_2
-  layout_properties: {grid_position: 'FFAZCJ,QESNJJ'}
-- type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Email ID:', font_size: null, font: '', spacing_above: small, icon_align: left,
     spacing_below: small, italic: false, background: '', bold: false, underline: false,
