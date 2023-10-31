@@ -3,7 +3,10 @@ container:
   properties: {col_widths: '{}'}
 components:
 - name: button_1_copy
-  properties: {text: Home, align: right, bold: true, role: tonal-button}
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
   type: Button
   layout_properties:
     col_widths: {}
@@ -11,9 +14,9 @@ components:
   event_bindings: {click: button_1_copy_click}
 - name: button_1
   properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
-    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-    underline: false, icon: ''}
+    foreground: black, visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: ''}
   type: Button
   layout_properties:
     col_widths: {}

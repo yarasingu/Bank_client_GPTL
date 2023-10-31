@@ -7,7 +7,14 @@ components:
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
-  components: []
+  components:
+  - name: home_borrower_registration_form
+    properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+      foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: true, underline: false, icon: 'fa:home'}
+    type: Button
+    layout_properties: {grid_position: 'KMPOOI,TMBSRJ'}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: content_panel
@@ -88,16 +95,16 @@ components:
   - type: Button
     properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Prev, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: 'fa:angle-double-left'}
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: true, underline: false, icon: 'fa:angle-double-left'}
     name: button_1
     layout_properties: {grid_position: 'ZWAGHS,GIPFAL'}
     event_bindings: {click: button_1_click}
   - type: Button
     properties: {role: elevated-button, align: left, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
-      underline: false, icon: 'fa:angle-double-right'}
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: true, underline: false, icon: 'fa:angle-double-right'}
     name: button_2
     layout_properties: {grid_position: 'ZWAGHS,IHAZSW'}
     event_bindings: {click: button_2_click}
