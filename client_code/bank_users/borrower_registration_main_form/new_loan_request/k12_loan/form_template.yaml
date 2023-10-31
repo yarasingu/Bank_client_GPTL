@@ -24,7 +24,7 @@ components:
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Fee,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false}
+    background: white, bold: false, underline: false}
   name: text_box_1
   layout_properties:
     col_widths: {}
@@ -44,7 +44,7 @@ components:
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Fee,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-    background: '', bold: false, underline: false}
+    background: white, bold: false, underline: false}
   name: text_box_2
   layout_properties:
     col_widths: {}
@@ -64,7 +64,7 @@ components:
   properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
     placeholder: Due date, border: '', enabled: true, foreground: '', visible: true,
     font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-    date: '', min_date: '', background: '', bold: false, underline: false, format: ''}
+    date: '', min_date: '', background: white, bold: false, underline: false, format: ''}
   name: date_picker_1
   layout_properties:
     col_widths: {}
