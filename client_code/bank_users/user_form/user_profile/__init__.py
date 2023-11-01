@@ -13,8 +13,6 @@ class user_profile(user_profileTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.get_user_name_lable.text = user_module.name
-    self.get_email_lable.text = user_module.email
 
     # Any code you write here will run before the form opens.
 
