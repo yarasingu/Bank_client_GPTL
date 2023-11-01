@@ -36,4 +36,12 @@ components:
   properties: {bold: true}
   type: Label
   layout_properties: {grid_position: 'GAXGQN,RSXXFU'}
+- name: label_1_copy_1_copy_2
+  properties: {text: 'User_id:', align: center, bold: true}
+  type: Label
+  layout_properties: {grid_position: 'GVRUJU,DNIQGJ'}
+- name: get_user_id
+  properties: {bold: true}
+  type: Label
+  layout_properties: {grid_position: 'GVRUJU,TSDYJW'}
 is_package: true

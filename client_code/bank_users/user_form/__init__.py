@@ -10,9 +10,9 @@ from anvil.tables import app_tables
 from . import user_module
 
 class user_form(user_formTemplate):
-  def __init__(self, **properties):
+  def __init__(self,email, **properties):
     self.init_components(**properties)
-    self.user_name_lable.text = user_module.name
+    # self.user_name_lable = user_module.get_name(email)[0]
     
   def logout_user_form_link_click(self, **event_args):
     anvil.users.logout()
