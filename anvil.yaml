@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: borrower_registration_form.star_1_borrower_registration_form}
+startup: {type: form, module: bank_users.main_form}
 package_name: bank_client
 allow_embedding: false
 name: Clone of Clone of bank_client
@@ -48,9 +48,6 @@ db_schema:
     - name: email_confirmation_key
       admin_ui: {width: 200}
       type: string
-    - name: registration_check
-      admin_ui: {width: 200, order: 8}
-      type: bool
     title: Users
   user_profile:
     client: full
