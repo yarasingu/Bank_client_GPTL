@@ -92,6 +92,9 @@ db_schema:
     - name: email_user
       admin_ui: {width: 200, order: 16}
       type: string
+    - name: last_confirm
+      admin_ui: {width: 200, order: 17}
+      type: bool
     title: user_profile
   borrower:
     title: borrower

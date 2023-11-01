@@ -100,7 +100,7 @@ components:
 - name: drop_down_1_copy_2
   properties:
     role: null
-    align: full
+    align: left
     tooltip: ''
     placeholder: Select One
     border: ''

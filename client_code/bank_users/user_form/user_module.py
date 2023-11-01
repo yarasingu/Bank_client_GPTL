@@ -57,5 +57,10 @@ def find_user_id(email):
   else:
     return 0000
 
+def last_check_status(user_id):
+  return False
+
+def registration_engine():
+  pass
   
   

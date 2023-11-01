@@ -14,9 +14,12 @@ class user_form(user_formTemplate):
     self.init_components(**properties)
     self.name = user_module.get_name(email)
     self.user_id =  user_module.find_user_id(email)
-    print(self.user_id)
     self.email = email
-    self.user_name_lable.text = self.name
+    if user_module.last_check_status(self.user_id):
+      open_form('bank_users.borrower_registration_main_form',user_id=self.user_id)
+    else:
+      self.user_name_lable.text = self.name
+      alert("Sorry, you complete borrower registration proceed at the moment.")
     
   def logout_user_form_link_click(self, **event_args):
     anvil.users.logout()
@@ -26,7 +29,10 @@ class user_form(user_formTemplate):
   
   # this function is use for new borrower signup and check the user already  signup or not
   def borrower_user_form_link_click(self, **event_args):
-    open_form('borrower_registration_form.star_1_borrower_registration_form')
+    userid = self.user_id
+    alert(f"you are Continue with userid= {userid}")
+    # user_module.registration_engine()
+    open_form('borrower_registration_form.star_1_borrower_registration_form', user_id=self.user_id)
 
 
   #--this metod is for lendor--#
@@ -37,6 +43,9 @@ class user_form(user_formTemplate):
   #--------------------------------------------------------------------#
   
   def view_profile_user_home_click(self, **event_args):
-    open_form('bank_users.user_form.user_profile',name = self.name, user_id = self.user_id, email = self.email)
+    name = self.name
+    email = self.email
+    user_id = self.user_id
+    alert(f"View profile:\nName = {name}\nEmail = {email}\nUser Id = {user_id}")
 
 
