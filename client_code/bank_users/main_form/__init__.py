@@ -21,15 +21,16 @@ class main_form(main_formTemplate):
     anvil.users.login_with_form()
     current_user = anvil.users.get_user()
     if current_user:
-      user_email = current_user['email']
-      user_module.email = user_email
-      email = user_email
-      parts = email.split("@")
-      if len(parts) == 2:
-        split_name = parts[0]
-        user_module.name =split_name
-        
-    check_user_already_exist = user_module.check_user_profile(current_user['email'])
+      user_check_registration = current_user['registration_check']
+      if user_check_registration:
+        user_email = current_user['email']
+        user_module.email = user_email
+        email = user_email
+        parts = email.split("@")
+        if len(parts) == 2:
+            split_name = parts[0]
+            user_module.name =split_name
+            check_user_already_exist = user_module.check_user_profile(current_user['email'])
 
     if check_user_already_exist:
       user_module.add_email_and_user_id(current_user['email'])
