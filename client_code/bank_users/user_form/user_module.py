@@ -41,3 +41,9 @@ def check_user_profile(email_id):
     else:
         return False
 
+
+def get_name(email):
+  parts = email.split("@")
+  if len(parts) == 2:
+    split_name = parts[0]
+    return split_name

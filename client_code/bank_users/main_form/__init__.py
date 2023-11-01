@@ -35,10 +35,6 @@ class main_form(main_formTemplate):
 
 
 
-
-
-
-
           
   #form maping no need to change 
   def about_main_form_link_click(self, **event_args):
