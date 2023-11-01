@@ -12,7 +12,8 @@ from . import user_module
 class user_form(user_formTemplate):
   def __init__(self,email, **properties):
     self.init_components(**properties)
-    self.user_name_lable = user_module.get_name(email)[0]
+    name = user_module.get_name(email)
+    self.user_name_lable = name
     
   def logout_user_form_link_click(self, **event_args):
     anvil.users.logout()
