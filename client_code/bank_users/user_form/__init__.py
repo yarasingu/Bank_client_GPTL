@@ -12,10 +12,11 @@ from . import user_module
 class user_form(user_formTemplate):
   def __init__(self,email,  **properties):
     self.init_components(**properties)
-    name = user_module.get_name(email)
-    user_id =  user_module.find_user_id(email)
-    print(user_id)
-    self.user_name_lable.text = name
+    self.name = user_module.get_name(email)
+    self.user_id =  user_module.find_user_id(email)
+    print(self.user_id)
+    self.email = email
+    self.user_name_lable.text = self.name
     
   def logout_user_form_link_click(self, **event_args):
     anvil.users.logout()
@@ -23,7 +24,7 @@ class user_form(user_formTemplate):
 
 
   
-  # this function is use for new borrower signup and check the user already signup or not
+  # this function is use for new borrower signup and check the user already  signup or not
   def borrower_user_form_link_click(self, **event_args):
     open_form('borrower_registration_form.star_1_borrower_registration_form')
 
@@ -36,6 +37,6 @@ class user_form(user_formTemplate):
   #--------------------------------------------------------------------#
   
   def view_profile_user_home_click(self, **event_args):
-    open_form('bank_users.user_form.user_profile',)
+    open_form('bank_users.user_form.user_profile',name = self.name, user_id = self.user_id, email = self.email)
 
 
