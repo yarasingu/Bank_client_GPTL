@@ -47,3 +47,15 @@ def get_name(email):
   if len(parts) == 2:
     split_name = parts[0]
     return split_name
+
+
+def find_user_id(email):
+  user_true = app_tables.user_profile.search(email_user=email)
+  if user_true:
+    coustmer_id = user_true[0]['coustmer_id']
+    return coustmer_id
+  else:
+    return 0000
+
+  
+  
