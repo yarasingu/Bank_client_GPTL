@@ -48,6 +48,9 @@ db_schema:
     - name: email_confirmation_key
       admin_ui: {width: 200}
       type: string
+    - name: registration_check
+      admin_ui: {width: 200, order: 8}
+      type: bool
     title: Users
   user_profile:
     client: full
