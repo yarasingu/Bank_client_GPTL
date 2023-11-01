@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..user_form import user_module
+from . import main_form_module
 
 class main_form(main_formTemplate):
   def __init__(self, **properties):
@@ -27,9 +28,11 @@ class main_form(main_formTemplate):
       print(check_user_already_exist)
       if check_user_already_exist == None:
         user_module.add_email_and_user_id(user_email)
-        open_form('bank_users.user_form',email=user_email)
+        main_form_module.email=user_email
+        open_form('bank_users.user_form')
       else:
-        open_form('bank_users.user_form',email=user_email)
+        main_form_module.email=user_email
+        open_form('bank_users.user_form')
     
 
 

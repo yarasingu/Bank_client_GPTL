@@ -8,10 +8,13 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from . import user_module
+from ..main_form import main_form_module
 
 class user_form(user_formTemplate):
-  def __init__(self,email,  **properties):
+  def __init__(self,**properties):
     self.init_components(**properties)
+    self.email = main_form_module.email
+    email=self.email
     self.name = user_module.get_name(email)
     self.user_id =  user_module.find_user_id(email)
     self.email = email
