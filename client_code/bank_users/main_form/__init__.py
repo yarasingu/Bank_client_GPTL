@@ -29,9 +29,11 @@ class main_form(main_formTemplate):
       if check_user_already_exist == None:
         user_module.add_email_and_user_id(user_email)
         main_form_module.email=user_email
+        main_form_module.flag=True
         open_form('bank_users.user_form')
       else:
         main_form_module.email=user_email
+        main_form_module.flag=False
         open_form('bank_users.user_form')
     
 

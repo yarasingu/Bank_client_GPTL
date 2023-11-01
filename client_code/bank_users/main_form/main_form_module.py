@@ -8,3 +8,7 @@ from anvil.tables import app_tables
 
 
 email = ""
+flag = ""
+
+def alert_mes(flag):
+  return flag

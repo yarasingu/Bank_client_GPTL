@@ -18,13 +18,19 @@ class user_form(user_formTemplate):
     self.name = user_module.get_name(email)
     self.user_id =  user_module.find_user_id(email)
     self.email = email
+    self.user_name_lable.text = self.name
     if user_module.last_check_status(self.user_id):
       open_form('bank_users.borrower_registration_main_form',user_id=self.user_id)
     else:
-      self.user_name_lable.text = self.name
-      alert("Sorry, you complete borrower registration proceed at the moment.")
+      if main_form_module.alert_mes(main_form_module.flag):
+        alert(f"Well Come {email} you account created Sucessfully")
+      else:
+        alert("Complete Your Registration Form To Acess Full App ")
+          
+        
     
   def logout_user_form_link_click(self, **event_args):
+    alert("you Trying To Logout")
     anvil.users.logout()
     open_form('bank_users.main_form')
 
