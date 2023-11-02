@@ -104,19 +104,31 @@ db_schema:
     - name: borrower_id
       admin_ui: {width: 200, order: 0}
       type: number
-    - name: coustmer_id
-      admin_ui: {width: 200, order: 1}
-      type: number
     - name: email_id
       admin_ui: {width: 200, order: 2}
       type: string
-    - name: loan_type
-      admin_ui: {width: 200, order: 3}
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: unresolved
+    - name: date_of_birth
+      admin_ui: {width: 200}
       type: string
-    - name: status
-      admin_ui: {width: 200, order: 4}
-      type: bool
-    - name: last_confirm
-      admin_ui: {width: 200, order: 5}
-      type: bool
+    - name: full_name
+      admin_ui: {width: 200}
+      type: string
+    - name: gender
+      admin_ui: {width: 200}
+      type: string
+    - name: marrital_status
+      admin_ui: {width: 200}
+      type: string
+    - name: mobile_no
+      admin_ui: {width: 200}
+      type: string
+    - name: mother_tounge
+      admin_ui: {width: 200}
+      type: string
+    - name: upload_pan_card
+      admin_ui: {width: 200}
+      type: media
 renamed: true
