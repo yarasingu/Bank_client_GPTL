@@ -1,4 +1,4 @@
-from ._anvil_designer import star_1_borrower_registration_form_step_3Template
+from ._anvil_designer import star_2_borrower_registration_form_step_5Template
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class star_1_borrower_registration_form_step_3(star_1_borrower_registration_form_step_3Template):
+class star_2_borrower_registration_form_step_5(star_2_borrower_registration_form_step_5Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -22,11 +22,11 @@ class star_1_borrower_registration_form_step_3(star_1_borrower_registration_form
     open_form('borrower_registration_form.step2_borrower_registration_form')
 
   def button_1_click(self, **event_args):
-    open_form('borrower_registration_form.star_1_borrower_registration_form_step_2')
+    open_form('borrower_registration_form.star_2_borrower_registration_form_step_1')
     """This method is called when the button is clicked"""
 
   def button_2_click(self, **event_args):
-    open_form('borrower_registration_form.star_2_borrower_registration_form_step_1')
+    open_form('borrower_registration_form.star_3_borrower_registration_form_step_1')
     """This method is called when the button is clicked"""
     
 
