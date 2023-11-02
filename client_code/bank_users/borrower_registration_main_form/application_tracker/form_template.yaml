@@ -12,46 +12,6 @@ components:
     properties: {text: Application Tracker, align: center}
     type: Label
     layout_properties: {grid_position: 'YFSYLA,SZLAMQ'}
-  - name: label_2
-    properties: {text: 'User ID:'}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,EWSIBN VJSKPT,XVDJXY'}
-  - name: label_3
-    properties: {text: 'Sales Executive Name:'}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,EWSIBN KQWKOE,FMHQDL'}
-  - name: label_5
-    properties: {text: 'Email ID:'}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,EWSIBN XZIXGM,BVEQZV'}
-  - name: label_7
-    properties: {text: 'Mobile/Desk Number:'}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,EWSIBN DHDTUS,OTZPSJ'}
-  - name: label_9
-    properties: {text: 'Status:'}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,EWSIBN WYBKYO,EGPAGE'}
-  - name: text_box_1
-    properties: {background: white}
-    type: TextBox
-    layout_properties: {grid_position: 'LGCIOT,HSJUEB RATXPO,IPOFGB'}
-  - name: label_4
-    properties: {background: white}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,HSJUEB PGOFKH,ZTXCJN'}
-  - name: label_6
-    properties: {background: white}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,HSJUEB OUFCMI,ZMOQAX'}
-  - name: label_8
-    properties: {background: white}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,HSJUEB UDGXDH,JYNTQK'}
-  - name: label_10
-    properties: {background: white}
-    type: Label
-    layout_properties: {grid_position: 'LGCIOT,HSJUEB YFGDXN,YTSTHC'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
