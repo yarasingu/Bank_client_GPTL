@@ -107,16 +107,13 @@ db_schema:
     - name: email_id
       admin_ui: {width: 200, order: 2}
       type: string
-    - name: coustmer_id
-      admin_ui: {width: 200}
-      type: number
-    - name: last_confirm
-      admin_ui: {width: 200}
-      type: bool
     - name: loan_type
       admin_ui: {width: 200}
       type: string
     - name: status
       admin_ui: {width: 200}
       type: bool
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: unresolved
 renamed: true
