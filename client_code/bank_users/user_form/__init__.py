@@ -40,7 +40,8 @@ class user_form(user_formTemplate):
   def borrower_user_form_link_click(self, **event_args):
     userid = self.user_id
     alert(f"you are Continue with userid= {userid}")
-    open_form('borrower_registration_form.star_1_borrower_registration_form', user_id=self.user_id)
+    open_form('borrower_registration_form.star_1_borrower_registration_form_begin',user_id=userid)
+   
 
 
   #--this metod is for lendor--#
