@@ -28,10 +28,10 @@ components:
     - {id: VJQQOR, title: Loan Amount, data_key: column_2}
     - {id: OJLQEN, title: Tenure, data_key: column_3}
     - {id: CHVOCG, data_key: column_4, title: Date of Apply}
-    - {id: VKTTOA, data_key: column_5, title: Column 5}
-    - {id: HEMILB, data_key: column_6, title: Column 6}
-    - {id: HMTIIF, data_key: column_7, title: Column 7}
-    - {id: SQXFPE, data_key: column_8, title: Column 8}
+    - {id: VKTTOA, data_key: column_5, title: Sales Executive Name}
+    - {id: HEMILB, data_key: column_6, title: Email ID}
+    - {id: HMTIIF, data_key: column_7, title: Mobile/Office Desk number}
+    - {id: SQXFPE, data_key: column_8, title: Application Status}
     wrap_on: mobile
   type: DataGrid
   components:
