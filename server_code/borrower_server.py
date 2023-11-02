@@ -15,3 +15,6 @@ def add_borrower_step1(full_name,mobile_no,dob,user_id):
     row[0]['full_name'] = full_name
     row[0]['mobile'] = mobile_no
     row[0]['date_of_birth'] = dob
+
+@anvil.server.callable
+def add_borrower_step2()
