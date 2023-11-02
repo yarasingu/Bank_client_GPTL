@@ -24,6 +24,7 @@ class main_form(main_formTemplate):
     if current_user:
       user_email = current_user['email']
       print(user_email)
+      print(user_email)
       check_user_already_exist = user_module.check_user_profile(user_email)
       print(check_user_already_exist)
       if check_user_already_exist == None:
