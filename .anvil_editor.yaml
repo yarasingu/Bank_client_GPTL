@@ -15,6 +15,7 @@ unique_ids:
     borrower_registration_form.Form17: '1698333518531905661624791.9857'
     borrower_registration_form.Form25: '1698335167702413600322704.5568'
     borrower_registration_form.Form13: '1698332373378759416024048.5184'
+    borrower_registration_form.star_1_borrower_registration_form_begin_6: '1698917728035780761604535.7333'
     borrower_registration_form.Form3: '1698315933455414515613011.9234'
     borrower_registration_form.Form9: '1698323328011836034798579.8617'
     bank_users.borrower_registration_main_form.boorrower_edit_profile: '1698653709394569134493869.6183'
@@ -29,7 +30,6 @@ unique_ids:
     bank_users.borrower_registration_main_form.application_tracker: '1698727550062137810464470.0753'
     borrower_registration_form.Form15: '1698332889731856919358856.042'
     bank_users.main_form.about_main_form: '1697797228207989144224833.6753'
-    borrower_registration_form.star_3_borrower_registration_form_step_1: '169805564800938248701223.703606'
     bank_users.main_form.Carrer_main_form: '1697798209480800445182464.0271'
     borrower_registration_form.Form19: '1698333989018104043233561.94833'
     borrower_registration_form.Form26: '1698335330682310626503473.98126'
@@ -51,7 +51,6 @@ unique_ids:
     admin.users_data: '169778513540513124823047.320433'
     borrower_registration_form.Form2: '1698315670229864901385491.3057'
     admin.users_data.approve: '1697785183755291247654111.69904'
-    borrower_registration_form.star_2_borrower_registration_form_step_5: '1698052393935225644542399.73087'
     bank_users.main_form.location_main_form: '1697798227516171604874293.17773'
   modules:
     admin: '1697785120232202704612285.80383'
