@@ -22,15 +22,15 @@ components:
   type: Label
   layout_properties: {grid_position: 'ANGAVV,MWVLMQ'}
 - name: label_4_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Gender, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Gender :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'KWRHYA,YZLHVS JFNXIL,CUYZLJ'}
 - name: label_3_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: 'Upload Profile photo
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Upload Profile photo
 
       (Size less than 2MB)', font_size: null, font: '', spacing_above: small, icon_align: left,
     spacing_below: small, italic: false, background: '', bold: true, underline: false,
@@ -38,13 +38,13 @@ components:
   type: Label
   layout_properties: {grid_position: 'KWRHYA,YZLHVS PCJURZ,TLWGVZ'}
 - name: label_2_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: City, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'City :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'KWRHYA,YZLHVS LFZAMM,SUONYS'}
-- name: drop_down_1_copy_1
+- name: gender_borrower_registration_dropdown
   properties:
     role: null
     align: full
@@ -66,25 +66,25 @@ components:
     include_placeholder: false
   type: DropDown
   layout_properties: {grid_position: 'KWRHYA,HUCQTE FLFNSY,QONCDB'}
-- name: file_loader_1_copy_1
+- name: borrower_registration_img_file_loader
   properties: {}
   type: FileLoader
   layout_properties: {grid_position: 'KWRHYA,HUCQTE PLHGMB,NXPEFL'}
-- name: text_box_1_copy_1
-  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+- name: borrower_registration_cit_text
+  properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter Your City,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
     background: 'theme:On Primary', bold: false, underline: false}
   type: TextBox
   layout_properties: {grid_position: 'KWRHYA,HUCQTE OKWMJB,UAGEPI'}
-- name: button_1_copy_1
+- name: borrower_registration_next_step1_button
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Prev, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:angle-double-left'}
   type: Button
   layout_properties: {grid_position: 'OKAPGS,KEXOIG'}
-  event_bindings: {click: button_1_click}
+  event_bindings: {click: borrower_registration_next_step1_button_click}
 - name: button_2_copy_1
   properties: {role: elevated-button, align: left, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Next, font_size: null, font: '', spacing_above: small,
