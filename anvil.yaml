@@ -113,10 +113,10 @@ db_schema:
     - name: status
       admin_ui: {width: 200}
       type: bool
-    - name: coustmer_id
-      admin_ui: {width: 200}
-      type: number
     - name: last_confirm
       admin_ui: {width: 200}
       type: bool
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: unresolved
 renamed: true
