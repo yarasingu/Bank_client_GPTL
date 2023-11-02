@@ -10,4 +10,8 @@ import anvil.server
 
 @anvil.server.callable
 def add_borrower_step1(full_name,mobile_no,dob,user_id):
-  app_tables.user_profile.search(coustmer_id=user_id)
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['full_name'] = full_name
+    row[0]['mobile'] = mobile_no
+    row[0]['date_of_birth'] = dob

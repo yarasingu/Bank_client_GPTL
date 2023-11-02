@@ -6,13 +6,14 @@ components:
     source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
   type: Image
   layout_properties: {grid_position: 'JKJESZ,ZSBLIF'}
-- name: home_borrower_registration_form_copy_2
+- name: home_borrower_registration_button
   properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:home'}
   type: Button
   layout_properties: {grid_position: 'JKJESZ,SJKLVH'}
+  event_bindings: {click: home_borrower_registration_button_click}
 - name: label_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Step-2, font_size: null, font: '', spacing_above: small,

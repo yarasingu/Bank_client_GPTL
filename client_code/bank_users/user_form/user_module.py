@@ -55,7 +55,7 @@ def find_user_id(email):
     coustmer_id = user_true[0]['coustmer_id']
     return coustmer_id
   else:
-    return 0000
+    return 0000000000
 
 def last_check_status(user_id):
   return False
