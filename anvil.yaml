@@ -109,26 +109,14 @@ db_schema:
       type: string
     - name: coustmer_id
       admin_ui: {width: 200}
-      type: unresolved
-    - name: date_of_birth
+      type: number
+    - name: last_confirm
+      admin_ui: {width: 200}
+      type: bool
+    - name: loan_type
       admin_ui: {width: 200}
       type: string
-    - name: full_name
+    - name: status
       admin_ui: {width: 200}
-      type: string
-    - name: gender
-      admin_ui: {width: 200}
-      type: string
-    - name: marrital_status
-      admin_ui: {width: 200}
-      type: string
-    - name: mobile_no
-      admin_ui: {width: 200}
-      type: string
-    - name: mother_tounge
-      admin_ui: {width: 200}
-      type: string
-    - name: upload_pan_card
-      admin_ui: {width: 200}
-      type: media
+      type: bool
 renamed: true
