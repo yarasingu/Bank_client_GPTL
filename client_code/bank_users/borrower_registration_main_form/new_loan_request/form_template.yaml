@@ -127,6 +127,19 @@ components:
     grid_position: XAMTRF,DVEKRQ
   data_bindings:
   - {property: selected_value, code: 'self.item[''tenure'']', writeback: true}
+- name: flow_panel_1
+  properties: {}
+  type: FlowPanel
+  layout_properties: {grid_position: 'KLYAPK,ERLQQA'}
+  components:
+  - name: check_box_1
+    properties: {text: I have read and agree to the}
+    type: CheckBox
+  - name: link_1
+    properties: {text: Terms and Conditions, icon: 'fa:info-circle'}
+    type: Link
+    layout_properties: {}
+    event_bindings: {click: link_1_click}
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Next, font_size: null, font: '', spacing_above: small,
