@@ -1,5 +1,6 @@
 unique_ids:
   forms:
+    borrower_registration_form.star_1_borrower_registration_form_begin_7: '1698315388445677081676573.6042'
     bank_users.borrower_registration_main_form.new_loan_request: '1698662158540530088363841.0887'
     borrower_registration_form.Form14: '1698332627517231431289949.0756'
     borrower_registration_form.star_1_borrower_registration_form_begin_5: '1698915753108355686900352.70654'
@@ -33,8 +34,6 @@ unique_ids:
     bank_users.main_form.Carrer_main_form: '1697798209480800445182464.0271'
     borrower_registration_form.Form19: '1698333989018104043233561.94833'
     borrower_registration_form.Form26: '1698335330682310626503473.98126'
-    borrower_registration_form.Form1: '1698315388445677081676573.6042'
-    admin.users_data.RowTemplate1: '1698137023691965667429018.8483'
     bank_users.borrower_registration_main_form.borrower_profile: '1698653519986110665503267.72595'
     bank_users.borrower_registration_main_form: '1698653447467818497216406.7532'
     borrower_registration_form.Form12: '1698332096187873089103092.0122'
@@ -48,22 +47,17 @@ unique_ids:
     borrower_registration_form.Form16: '169833328834584258750628.77953'
     bank_users.borrower_registration_main_form.new_loan_request.loan_type: '1698663480920279749801604.1442'
     borrower_registration_form.Form20: '1698334144959105386682709.67921'
-    admin.users_data: '169778513540513124823047.320433'
     borrower_registration_form.Form2: '1698315670229864901385491.3057'
-    admin.users_data.approve: '1697785183755291247654111.69904'
     bank_users.main_form.location_main_form: '1697798227516171604874293.17773'
   modules:
-    admin: '1697785120232202704612285.80383'
     bank_users: '1697785066420255019039536.32742'
     bank_users.main_form.main_form_module: '1697797787236242664445.2286908'
     bank_users.user_form.user_module: '1698214640397501426321190.87915'
     borrower_registration_form: '1697801606303980155019216.2473'
     lendor_registration_form: '1698165522178708771223568.9454'
   server_modules:
-    admin_user_server: '1697798996367953351277194.122'
     bank_user_main_server: '1697783776748650823106864.2817'
     borrower_server: '169816543913997904134922.20096'
-    lendo_server: '1698165462759144630744034.4623'
   assets:
     kotackpng.png: '1697784961328616728754407.5461'
     standard-page.html: PVEOG3J5Q4W4DDZVUQH5SGASQFHLWEER

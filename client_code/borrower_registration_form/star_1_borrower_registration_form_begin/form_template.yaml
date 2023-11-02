@@ -15,7 +15,7 @@ components:
     bold: true, underline: false, icon: 'fa:home'}
   type: Button
   layout_properties: {grid_position: 'KMPOOI,TMBSRJ'}
-  event_bindings: {click: button_1_click}
+  event_bindings: {click: home_borrower_registration_form_click}
 - name: label_1_copy_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: 'Borrower  Registration Form : ', font_size: null, font: '',
@@ -31,45 +31,45 @@ components:
   type: Label
   layout_properties: {grid_position: 'DTAAVD,CYEHHR', full_width_row: true}
 - name: label_2_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Full name, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Full name :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'IMZQZT,HLHREA'}
 - name: borrower_full_name_test
-  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Enter Your Full Name,
+  properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter Your Full Name,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
     background: 'theme:Light Overlay 1', bold: false, underline: false}
   type: TextBox
   layout_properties: {grid_position: 'IMZQZT,LPYXAC'}
 - name: label_4_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: Mobile Number, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Mobile Number :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'WDBQCC,BXMCGS'}
 - name: borrower_mobile_number_text
-  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: Enter Your Mobile Number,
+  properties: {role: null, align: center, hide_text: false, tooltip: '', placeholder: Enter Your Mobile Number,
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
     background: 'theme:On Secondary', bold: false, underline: false}
   type: TextBox
   layout_properties: {grid_position: 'WDBQCC,WVNAYM'}
 - name: label_5_copy_1
-  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
-    text: DOB, font_size: null, font: '', spacing_above: small, icon_align: left,
-    spacing_below: small, italic: false, background: '', bold: true, underline: false,
-    icon: ''}
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'DOB :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'COVMLK,LKQUSX'}
 - name: borrower_date_of_birth_date_picker
   properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
     placeholder: '', border: '', enabled: true, foreground: '', visible: true, font_size: null,
     font: '', spacing_above: small, spacing_below: small, italic: false, date: '',
-    min_date: '', background: 'theme:On Primary', bold: false, underline: false, format: ''}
+    min_date: '', background: 'theme:On Primary', bold: true, underline: false, format: ''}
   type: DatePicker
   layout_properties: {grid_position: 'COVMLK,COZRUY'}
 - type: Button

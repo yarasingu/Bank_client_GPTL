@@ -42,13 +42,28 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'RCHYYW,UPDKPT'}
-- name: text_box_2
-  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
-    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-    background: 'theme:On Primary', bold: false, underline: false}
-  type: TextBox
-  layout_properties: {grid_position: 'RCHYYW,ROLKMA'}
+- name: drop_down_1_copy_1_copy_1_copy_1
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: ['', 'Yes', 'No']
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: false
+  type: DropDown
+  layout_properties: {grid_position: 'RCHYYW,KNZSOY'}
 - name: label_4_copy_1
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Spouse Company Name
