@@ -30,10 +30,12 @@ class user_form(user_formTemplate):
         
     
   def logout_user_form_link_click(self, **event_args):
-    alert("you Trying To Logout")
-    anvil.users.logout()
-    open_form('bank_users.main_form')
-
+    if self.logout_user_form_link_click:
+     alert("logout sucessfully")
+     anvil.users.logout()
+     open_form('bank_users.main_form')
+    else:
+     open_form('bank_users.user_form') 
 
   
   # this function is use for new borrower signup and check the user already  signup or not
