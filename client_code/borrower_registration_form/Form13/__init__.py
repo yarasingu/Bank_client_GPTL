@@ -22,6 +22,10 @@ class Form13(Form13Template):
   def button_2_click(self, **event_args):
     open_form('borrower_registration_form.Form14')
     """This method is called when the button is clicked"""
+
+  def home_borrower_registration_form_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    pass
     
 
     
