@@ -28,7 +28,7 @@ components:
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'YAFGXG,OHSMTK'}
-- name: text_box_1
+- name: borrower_registration_ctc_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
@@ -42,7 +42,7 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'CHIOXN,RLKMPG'}
-- name: text_box_2
+- name: borrower_registration_off_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
@@ -56,7 +56,7 @@ components:
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'AXWEFM,PWTERL'}
-- name: text_box_3
+- name: borrower_registration_bus_name_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
@@ -70,7 +70,7 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'BCAWQS,MYTMBN'}
-- name: text_box_4
+- name: borrower_registration_bus_add_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
