@@ -17,7 +17,6 @@ class star_1_borrower_registration_form_begin_3(star_1_borrower_registration_for
     # Any code you write here will run before the form opens.
 
   def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
     aadhar= self.borrower_registration_aadhar_text.text
     aadhar_card = self.borrower_registration_img_aadhar_file_loader
     pan = self.borrower_registration_pan_text.text
