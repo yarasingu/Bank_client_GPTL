@@ -1,5 +1,0 @@
-container:
-  type: ColumnPanel
-  properties: {role: filled-button}
-components: []
-is_package: true

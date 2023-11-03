@@ -20,7 +20,7 @@ class star_1_borrower_registration_form_begin_2(star_1_borrower_registration_for
     open_form('bank_users.user_form')
 
   def borrower_registration_next_step1_button_click(self, **event_args):
-    open_form('borrower_registration_form.star_1_borrower_registration_form_begin')
+    open_form('borrower_registration_form.star_1_borrower_registration_form_begin',self.userId)
 
   def button_2_click(self, **event_args):
     gender = self.gender_borrower_registration_dropdown.selected_value
@@ -31,4 +31,5 @@ class star_1_borrower_registration_form_begin_2(star_1_borrower_registration_for
       Notification("Please Fill The All required fileds")
     else:
       anvil.server.call('add_borrower_step2',gender,user_photo,city,user_id)
-      
+      Notification("step 2 form fill up submited sucessfull")
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3',user_id = user_id)

@@ -18,6 +18,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: SIKYXE,BBRSAR
+  event_bindings: {click: home_borrower_registration_form_click}
 - name: label_1_copy_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Edit Profile, font_size: null, font: '', spacing_above: small,
