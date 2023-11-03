@@ -8,6 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..user_form import user_module
+from . import main_form_module
 
 class main_form(main_formTemplate):
   def __init__(self, **properties):
@@ -22,25 +23,25 @@ class main_form(main_formTemplate):
     current_user = anvil.users.get_user()
     if current_user:
       user_email = current_user['email']
-      user_module.email = user_email
-      email = user_email
-      parts = email.split("@")
-      if len(parts) == 2:
-        split_name = parts[0]
-        user_module.name =split_name
-        
-    check_user_already_exist = user_module.check_user_profile(current_user['email'])
-
-    if check_user_already_exist:
-      user_module.add_email_and_user_id(current_user['email'])
-      open_form('bank_users.user_form')
-    else:
-      user_module.add_email_and_user_id(current_user)
-      open_form('bank_users.user_form')
+      print(user_email)
+      print(user_email)
+      check_user_already_exist = user_module.check_user_profile(user_email)
+      print(check_user_already_exist)
+      if check_user_already_exist == None:
+        user_module.add_email_and_user_id(user_email)
+        main_form_module.email=user_email
+        main_form_module.flag=True
+        open_form('bank_users.user_form')
+      else:
+        main_form_module.email=user_email
+        main_form_module.flag=False
+        open_form('bank_users.user_form')
     
 
 
 
+
+          
   #form maping no need to change 
   def about_main_form_link_click(self, **event_args):
     open_form('bank_users.main_form.about_main_form')

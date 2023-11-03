@@ -1,0 +1,47 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Business Loan, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_1
+  layout_properties:
+    col_widths: {}
+    grid_position: JDPBOR,LDBXSK
+- name: label_4
+  properties: {text: repayment, align: center}
+  type: Label
+  layout_properties: {grid_position: 'DJJKVV,YSLICO'}
+- name: drop_down_4
+  properties:
+    items: [Onetime Payment (Generally 30 days duration), ' 3 Months EMI', ' 6 Months
+        EMI', '']
+    include_placeholder: true
+    placeholder: select one
+    background: white
+  type: DropDown
+  layout_properties: {grid_position: 'DJJKVV,YHBVOW'}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: 'fa:angle-double-left'}
+  name: button_2
+  layout_properties:
+    col_widths: {}
+    grid_position: UXJTKC,YPXGKN
+  event_bindings: {click: button_2_click}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: 'fa:floppy-o'}
+  name: button_1
+  layout_properties:
+    col_widths: {}
+    grid_position: UXJTKC,LWSSAD
+  event_bindings: {click: button_1_click}
+is_package: true

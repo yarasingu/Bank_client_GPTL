@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: borrower_registration_form.star_1_borrower_registration_form}
+startup: {type: form, module: bank_users.borrower_rgistration_form}
 package_name: bank_client
 allow_embedding: false
 name: Clone of Clone of bank_client
@@ -59,12 +59,6 @@ db_schema:
     - name: full_name
       admin_ui: {width: 200}
       type: string
-    - name: mobile
-      admin_ui: {width: 200}
-      type: number
-    - name: mobile_check
-      admin_ui: {width: 200}
-      type: bool
     - name: user_photo
       admin_ui: {width: 200}
       type: media
@@ -92,6 +86,18 @@ db_schema:
     - name: email_user
       admin_ui: {width: 200, order: 16}
       type: string
+    - name: last_confirm
+      admin_ui: {width: 200, order: 17}
+      type: bool
+    - name: mobile
+      admin_ui: {width: 200, order: 18}
+      type: string
+    - name: mobile_check
+      admin_ui: {width: 200, order: 19}
+      type: bool
+    - name: city
+      admin_ui: {width: 200, order: 15}
+      type: string
     title: user_profile
   borrower:
     title: borrower
@@ -101,16 +107,19 @@ db_schema:
     - name: borrower_id
       admin_ui: {width: 200, order: 0}
       type: number
-    - name: coustmer_id
-      admin_ui: {width: 200, order: 1}
-      type: number
     - name: email_id
       admin_ui: {width: 200, order: 2}
       type: string
     - name: loan_type
-      admin_ui: {width: 200, order: 3}
+      admin_ui: {width: 200}
       type: string
     - name: status
-      admin_ui: {width: 200, order: 4}
+      admin_ui: {width: 200}
       type: bool
+    - name: last_confirm
+      admin_ui: {width: 200}
+      type: bool
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: number
 renamed: true

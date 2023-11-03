@@ -1,0 +1,37 @@
+is_package: true
+container:
+  type: DataRowPanel
+  properties: {align: center}
+components:
+- name: label_1
+  properties: {align: center, bold: true}
+  type: Label
+  layout_properties: {column: JKSDUP}
+- name: label_2
+  properties: {align: center, bold: true}
+  type: Label
+  layout_properties: {column: VJQQOR}
+- name: label_3
+  properties: {align: center, bold: true}
+  type: Label
+  layout_properties: {column: OJLQEN}
+- name: label_4
+  properties: {bold: true, align: center}
+  type: Label
+  layout_properties: {column: CHVOCG}
+- name: label_5
+  properties: {bold: true, align: center}
+  type: Label
+  layout_properties: {column: VKTTOA}
+- name: label_6
+  properties: {bold: true, align: center}
+  type: Label
+  layout_properties: {column: HEMILB}
+- name: label_7
+  properties: {bold: true, align: center}
+  type: Label
+  layout_properties: {column: HMTIIF}
+- name: label_8
+  properties: {bold: true, align: center}
+  type: Label
+  layout_properties: {column: SQXFPE}

@@ -1,0 +1,84 @@
+container: {type: ColumnPanel}
+components:
+- name: image_1_copy_1_copy_1_copy_1
+  properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+    source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'IGHPVT,XGMWKD'}
+- name: home_borrower_registration_form_copy_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
+  type: Button
+  layout_properties: {grid_position: 'IGHPVT,ZYIDPK'}
+  event_bindings: {click: button_1_click}
+- name: label_1_copy_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Step-3, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'JWJUJI,FJSLKL'}
+- name: label_3_copy_1_copy_1
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Enter your aadhar number, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'MXFWWU,MTGZHY UFUZYG,BPJKHA'}
+- name: label_3_copy_1_copy_2
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Upload your aadhar card
+
+      (Size less than 2MB)', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'MXFWWU,MTGZHY YKKCXL,KGMNET'}
+- name: label_3_copy_1_copy_3
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Enter your pan number, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'MXFWWU,MTGZHY WMWRRA,SRYYMP'}
+- name: label_3_copy_1_copy_4
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Upload pan photo
+
+      (Size less than 2MB)', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'MXFWWU,MTGZHY YLVBUS,CJDCTZ'}
+- name: borrower_registration_aadhar_text
+  properties: {background: white}
+  type: TextBox
+  layout_properties: {grid_position: 'MXFWWU,ZWZHLK PWJJWY,JLFLQX'}
+- name: borrower_registration_img_aadhar_file_loader
+  properties: {}
+  type: FileLoader
+  layout_properties: {grid_position: 'MXFWWU,ZWZHLK PQQUJI,XQWYLN'}
+- name: borrower_registration_pan_text
+  properties: {background: white}
+  type: TextBox
+  layout_properties: {grid_position: 'MXFWWU,ZWZHLK XFCBNG,QYHGQQ'}
+- name: borrower_registration_img_pan_file_loader
+  properties: {}
+  type: FileLoader
+  layout_properties: {grid_position: 'MXFWWU,ZWZHLK RMXXQZ,DKHPQI'}
+- name: button_1
+  properties: {text: prev, background: '#0876E8', icon: 'fa:angle-double-left', align: right,
+    foreground: black, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'HVXIJF,BIAORS'}
+  event_bindings: {click: button_1_click}
+- name: button_2
+  properties: {text: next, icon: 'fa:angle-double-right', background: '#0876E8', align: left,
+    foreground: black, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'HVXIJF,XYNLEH'}
+  event_bindings: {click: button_2_click}
+is_package: true

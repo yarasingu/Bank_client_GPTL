@@ -1,0 +1,42 @@
+container: {type: ColumnPanel}
+components:
+- name: image_1_copy_1_copy_1_copy_1_copy_1
+  properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+    source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'EEEWTD,ZVZADT'}
+- name: home_borrower_registration_button_copy_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
+  type: Button
+  layout_properties: {grid_position: 'EEEWTD,FJAJCH'}
+  event_bindings: {click: home_borrower_registration_button_click}
+- name: label_1_copy_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Application Tracker, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'WFEHJS,UHPGUN'}
+- name: data_grid_1
+  properties:
+    columns:
+    - {id: JKSDUP, title: Loan ID, data_key: column_1}
+    - {id: VJQQOR, title: Loan Amount, data_key: column_2}
+    - {id: OJLQEN, title: Tenure, data_key: column_3}
+    - {id: CHVOCG, data_key: column_4, title: Date of Apply}
+    - {id: VKTTOA, data_key: column_5, title: Sales Executive Name}
+    - {id: HEMILB, data_key: column_6, title: Email ID}
+    - {id: HMTIIF, data_key: column_7, title: Mobile/Office Desk number}
+    - {id: SQXFPE, data_key: column_8, title: Application Status}
+    wrap_on: mobile
+  type: DataGrid
+  components:
+  - name: repeating_panel_1
+    properties: {item_template: bank_users.borrower_rgistration_form.application_tracker.RowTemplate1}
+    type: RepeatingPanel
+  layout_properties: {grid_position: 'JTFZBD,TXPLSU'}
+is_package: true

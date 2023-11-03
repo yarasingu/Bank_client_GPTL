@@ -8,12 +8,6 @@ from anvil.tables import app_tables
 
 
 
-email = ""
-name =""
-
-
-
-
 def generate_user_id():
     full_table = app_tables.user_profile.search()
     if full_table:
@@ -41,7 +35,32 @@ def add_email_and_user_id(email_id):
 def check_user_profile(email_id):
     user_check = app_tables.user_profile.search(email_user=email_id)
     if user_check:
-        return True
+      for user in user_check:
+        if user['email_user'] == email_id:
+          return True
     else:
         return False
 
+
+def get_name(email):
+  parts = email.split("@")
+  if len(parts) == 2:
+    split_name = parts[0]
+    return split_name
+
+
+def find_user_id(email):
+  user_true = app_tables.user_profile.search(email_user=email)
+  if user_true:
+    coustmer_id = user_true[0]['coustmer_id']
+    return coustmer_id
+  else:
+    return 0000000000
+
+def last_check_status(user_id):
+  return False
+
+def registration_engine():
+  pass
+  
+  

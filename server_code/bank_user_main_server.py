@@ -18,10 +18,10 @@ import anvil.server
 #   print("Hello, " + name + "!")
 #   return 42
 #
-@anvil.server.callable
-def get_next_user_id(self):
-  highest_user_id = anvil.server.database.query('User', {'user_id': anvil.server.database.ANY_VALUE})
-  highest_user_id = max([user['user_id'] for user in highest_user_id])
-  print("i added a one line")
-  next_user_id = highest_user_id + 1 if highest_user_id else 1000
-  return next_user_id
+# @anvil.server.callable
+# def get_next_user_id(self):
+#   highest_user_id = anvil.server.database.query('User', {'user_id': anvil.server.database.ANY_VALUE})
+#   highest_user_id = max([user['user_id'] for user in highest_user_id])
+#   print("i added a one line")
+# #   next_user_id = highest_user_id + 1 if highest_user_id else 1000
+#   return next_user_id

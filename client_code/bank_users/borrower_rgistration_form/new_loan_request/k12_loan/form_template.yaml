@@ -1,0 +1,106 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{}'}
+components:
+- type: Label
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: K-12 Education Loan, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  name: label_1
+  layout_properties:
+    col_widths: {}
+    grid_position: DHHRPY,CWEGFE
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: School Term fees / Annual Fees, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_2
+  layout_properties:
+    col_widths: {}
+    grid_position: SLKQBS,XXCEJQ
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: white, bold: false, underline: false}
+  name: Enter_amount
+  layout_properties:
+    col_widths: {}
+    grid_position: SLKQBS,YUSRHF
+  data_bindings:
+  - {property: text, code: 'self.item[''school'']', writeback: true}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Transportation Fee (Optional), font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+    underline: false, icon: ''}
+  name: label_3
+  layout_properties:
+    col_widths: {}
+    grid_position: MKKFYN,GTUNRU QAUYHW,EBGGIY
+- name: label_5
+  properties: {text: Select Child}
+  type: Label
+  layout_properties: {grid_position: 'MKKFYN,GTUNRU TRPIKH,MPJLXW'}
+- type: TextBox
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: white, bold: false, underline: false}
+  name: enter_amount
+  layout_properties:
+    col_widths: {}
+    grid_position: MKKFYN,LXXEWL KIMEMJ,PRHOWG
+  data_bindings:
+  - {property: text, code: 'self.item[''transport'']', writeback: true}
+- name: drop_down_1
+  properties:
+    items: ['1', '2', '3', '4', '']
+    include_placeholder: true
+    placeholder: select
+    background: white
+  type: DropDown
+  layout_properties: {grid_position: 'MKKFYN,LXXEWL YJQTVX,FEIIJC'}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: Fees Due date, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_4
+  layout_properties:
+    col_widths: {}
+    grid_position: VHSOPV,TJNIIC
+- type: DatePicker
+  properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+    placeholder: Due date, border: '', enabled: true, foreground: '', visible: true,
+    font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+    date: '', min_date: '', background: white, bold: false, underline: false, format: ''}
+  name: date_picker_1
+  layout_properties:
+    col_widths: {}
+    grid_position: VHSOPV,VOZZSI
+  data_bindings:
+  - {property: date, code: 'self.item[''duedate'']', writeback: true}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: ' Back', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: 'fa:angle-double-left'}
+  name: button_2
+  layout_properties:
+    col_widths: {}
+    grid_position: YZCJCD,OZQQHQ
+  event_bindings: {click: button_2_click}
+- type: Button
+  properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: false, underline: false, icon: 'fa:floppy-o'}
+  name: button_1
+  layout_properties:
+    col_widths: {}
+    grid_position: YZCJCD,LUWSCW
+  event_bindings: {click: button_1_click}
+is_package: true

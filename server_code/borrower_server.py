@@ -6,15 +6,32 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.server
 
-# This is a server module. It runs on the Anvil server,
-# rather than in the user's browser.
-#
-# To allow anvil.server.call() to call functions here, we mark
-# them with @anvil.server.callable.
-# Here is an example - you can replace it with your own:
-#
-# @anvil.server.callable
-# def say_hello(name):
-#   print("Hello, " + name + "!")
-#   return 42
-#
+
+
+@anvil.server.callable
+def add_borrower_step1(full_name,mobile_no,dob,user_id):
+  row = app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['full_name'] = full_name
+    row[0]['mobile'] = mobile_no
+    row[0]['date_of_birth'] = dob
+    
+
+@anvil.server.callable
+def add_borrower_step2(gender,user_photo,city,user_id):
+  row=app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['gender']=gender
+    row[0]['user_photo']=user_photo
+    row[0]['city']=city
+
+
+@anvil.server.callable
+def add_borrower_step3(aadhar,aadhar_card,pan,pan_card,user_id):
+  row=app_tables.user_profile.search(coustmer_id=user_id)
+  if row:
+    row[0]['aadhaar_no']=aadhar
+    row[0]['aadhaar_photo']=aadhar_card
+    row[0]['pan_number']=pan
+    row[0]['pan_photo']=pan_card
+    
