@@ -36,6 +36,10 @@ components:
   type: FlowPanel
   layout_properties: {grid_position: 'NIEJOH,SJONSN'}
   components:
+  - name: spacer_1
+    properties: {height: 32}
+    type: Spacer
+    layout_properties: {width: 90}
   - name: button_6
     properties: {text: New / Loan Extension request, background: '#0876E8', foreground: black,
       bold: true}
