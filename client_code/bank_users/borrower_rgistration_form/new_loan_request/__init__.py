@@ -16,10 +16,10 @@ class new_loan_request(new_loan_requestTemplate):
     # Any code you write here will run before the form opens.
 
   def button_1_copy_click(self, **event_args):
-    open_form('bank_users.borrower_registration_main_form.new_loan_request.loan_type')
+    open_form('bank_users.borrower_rgistration_form.new_loan_request.loan_type')
 
   def button_1_click(self, **event_args):
-    open_form('bank_users.borrower_registration_main_form')
+    open_form('bank_users.borrower_rgistration_form')
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""

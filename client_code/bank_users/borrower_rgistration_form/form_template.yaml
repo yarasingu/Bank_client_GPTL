@@ -27,13 +27,13 @@ components:
       bold: true, underline: false, icon: 'fa:home'}
     type: Button
     event_bindings: {click: home_borrower_registration_form_copy_1_click}
-  - name: home_borrower_registration_form_copy_1_copy_1
+  - name: faqs_borrower_home_main_form
     properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
       foreground: black, visible: true, text: FA'QS, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
       bold: true, underline: false, icon: 'fa:question'}
     type: Button
-    event_bindings: {click: home_borrower_registration_form_copy_1_click}
+    event_bindings: {click: faqs_borrower_home_main_form_click}
     layout_properties: {}
   - name: about_borrower_registration_form_
     properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
@@ -41,15 +41,15 @@ components:
       icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
       bold: true, underline: false, icon: 'fa:adn'}
     type: Button
-    event_bindings: {click: home_borrower_registration_form_copy_1_click}
+    event_bindings: {click: about_borrower_registration_form__click}
     layout_properties: {}
-  - name: home_borrower_registration_form_copy_1_copy_1_copy_2
+  - name: location_borrower_main_form
     properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
       foreground: black, visible: true, text: Location, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '#0876E8', bold: true, underline: false, icon: 'fa:location-arrow'}
     type: Button
-    event_bindings: {click: home_borrower_registration_form_copy_1_click}
+    event_bindings: {click: location_borrower_main_form_click}
     layout_properties: {}
 - name: column_panel_1
   properties: {role: outlined-card}
@@ -57,38 +57,37 @@ components:
   layout_properties: {slot: left-nav}
   components:
   - name: link_1
-    properties: {text: View Profile}
+    properties: {text: View Profile, bold: true}
     type: Link
     layout_properties: {grid_position: 'PVIIFB,JEUETP'}
     event_bindings: {click: link_1_click}
   - name: link_2
-    properties: {text: New Loan}
+    properties: {text: New Loan, bold: true}
     type: Link
     layout_properties: {grid_position: 'GRLMLR,YQWSBM'}
     event_bindings: {click: link_2_click}
   - name: link_3
-    properties: {text: Loan Foreclosure Request}
+    properties: {text: Loan Foreclosure Request, bold: true}
     type: Link
     layout_properties: {grid_position: 'WJHGYD,PNHRUH'}
+    event_bindings: {click: link_3_click}
   - name: link_4
-    properties: {text: Loan Close}
+    properties: {text: Loan Close, bold: true}
     type: Link
     layout_properties: {grid_position: 'LCRIAZ,LXAHUI'}
+    event_bindings: {click: link_4_click}
   - name: link_5
-    properties: {text: Discount Coupons}
+    properties: {text: Discount Coupons, bold: true}
     type: Link
     layout_properties: {grid_position: 'ASMIDJ,DEEXFR'}
+    event_bindings: {click: link_5_click}
   - name: link_6
-    properties: {text: Application Tracker}
+    properties: {text: Application Tracker, bold: true}
     type: Link
     layout_properties: {grid_position: 'PWHLCF,XGZRPR'}
     event_bindings: {click: link_6_click}
-  - name: link_7
-    properties: {text: Change Password}
-    type: Link
-    layout_properties: {grid_position: 'WVFRWR,XJDDRX'}
   - name: link_8
-    properties: {text: Logout}
+    properties: {text: Logout, bold: true}
     type: Link
     layout_properties: {grid_position: ''}
     event_bindings: {click: link_8_click}

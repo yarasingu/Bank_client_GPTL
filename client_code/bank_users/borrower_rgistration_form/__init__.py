@@ -35,4 +35,28 @@ class borrower_rgistration_form(borrower_rgistration_formTemplate):
 
   def home_borrower_registration_form_copy_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('bank_users.main_form')
+    open_form('bank_users.borrower_rgistration_form')
+
+  def link_3_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_foreclosure_request')
+
+  def link_4_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_loan_close')
+
+  def link_5_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_discount_coupons')
+
+  def faqs_borrower_home_main_form_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_faqs')
+
+  def about_borrower_registration_form__click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_about')
+
+  def location_borrower_main_form_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_location')

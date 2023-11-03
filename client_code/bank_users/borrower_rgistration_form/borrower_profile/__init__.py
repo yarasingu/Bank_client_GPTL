@@ -19,4 +19,4 @@ class borrower_profile(borrower_profileTemplate):
     open_form('bank_users.borrower_registration_main_form.boorrower_edit_profile')
 
   def button_1_copy_click(self, **event_args):
-    open_form('bank_users.borrower_registration_main_form')
+    open_form('bank_users.borrower_rgistration_form')

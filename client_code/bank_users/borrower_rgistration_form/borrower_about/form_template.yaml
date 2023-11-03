@@ -1,0 +1,17 @@
+container: {type: ColumnPanel}
+components:
+- name: image_1_copy_1_copy_1_copy_1_copy_1_copy_1
+  properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+    source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'GWAFFB,JYZVBZ'}
+- name: home_borrower_registration_form_copy_1_copy_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
+  type: Button
+  event_bindings: {click: home_borrower_registration_form_copy_1_click}
+  layout_properties: {grid_position: 'GWAFFB,MQDJFF'}
+is_package: true
