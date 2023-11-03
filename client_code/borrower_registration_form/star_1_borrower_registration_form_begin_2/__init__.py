@@ -31,3 +31,4 @@ class star_1_borrower_registration_form_begin_2(star_1_borrower_registration_for
       Notification("Please Fill The All required fileds")
     else:
       anvil.server.call('add_borrower_step2',gender,user_photo,city,user_id)
+      
