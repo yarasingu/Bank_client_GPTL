@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: bank_users.main_form}
+startup: {type: form, module: bank_users.borrower_registration_form}
 package_name: bank_client
 allow_embedding: false
 name: Clone of Clone of bank_client
