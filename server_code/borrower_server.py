@@ -34,4 +34,7 @@ def add_borrower_step3(aadhar,aadhar_card,pan,pan_card,user_id):
     row[0]['aadhaar_photo']=aadhar_card
     row[0]['pan_number']=pan
     row[0]['pan_photo']=pan_card
-    
+
+
+@anvil.server.callable
+def add_borrower_step4()

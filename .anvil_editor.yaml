@@ -58,6 +58,7 @@ unique_ids:
     bank_users.main_form.location_main_form: '1697798227516171604874293.17773'
   modules:
     bank_users: '1697785066420255019039536.32742'
+    bank_users.borrower_rgistration_form.borrower_main_form_module: '1699015898653538926286773.5525'
     bank_users.main_form.main_form_module: '1697797787236242664445.2286908'
     bank_users.user_form.user_module: '1698214640397501426321190.87915'
     borrower_registration_form: '1697801606303980155019216.2473'

@@ -9,6 +9,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 from ..user_form import user_module
 from . import main_form_module
+from ..borrower_rgistration_form import borrower_main_form_module
 
 class main_form(main_formTemplate):
   def __init__(self, **properties):
@@ -27,15 +28,22 @@ class main_form(main_formTemplate):
       print(user_email)
       check_user_already_exist = user_module.check_user_profile(user_email)
       print(check_user_already_exist)
+      
       if check_user_already_exist == None:
         user_module.add_email_and_user_id(user_email)
         main_form_module.email=user_email
         main_form_module.flag=True
         open_form('bank_users.user_form')
       else:
-        main_form_module.email=user_email
-        main_form_module.flag=False
-        open_form('bank_users.user_form')
+        check_user_registration_form_done_or_not = user_module.check_user_registration_form_done_or_not_engine(user_email)
+        if check_user_registration_form_done_or_not:
+          main_form_module.email=user_email
+          borrower_main_form_module.user_id = user_module.find_user_id(user_email)
+          open_form('bank_users.borrower_rgistration_form')
+        else:
+          main_form_module.email=user_email
+          main_form_module.flag=False
+          open_form('bank_users.user_form')
     
 
 

@@ -23,7 +23,7 @@ class user_form(user_formTemplate):
       open_form('bank_users.borrower_registration_main_form',user_id=self.user_id)
     else:
       if main_form_module.alert_mes(main_form_module.flag):
-        alert(f"Well Come {email} you account created Sucessfully")
+        alert(f"Well Come {email} Please Complete The Registration Form To Acess Full App")
       else:
         alert("Complete Your Registration Form To Acess Full App ")
           
