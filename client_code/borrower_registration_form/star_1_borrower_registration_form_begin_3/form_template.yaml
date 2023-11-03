@@ -79,4 +79,5 @@ components:
     foreground: black, bold: true}
   type: Button
   layout_properties: {grid_position: 'HVXIJF,XYNLEH'}
+  event_bindings: {click: button_2_click}
 is_package: true
