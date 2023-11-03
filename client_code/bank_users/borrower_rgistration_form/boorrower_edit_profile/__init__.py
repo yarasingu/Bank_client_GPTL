@@ -17,3 +17,7 @@ class boorrower_edit_profile(boorrower_edit_profileTemplate):
 
   def button_1_click(self, **event_args):
     open_form('bank_users.borrower_registration_main_form')
+
+  def home_borrower_registration_form_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.main_form')

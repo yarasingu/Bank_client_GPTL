@@ -14,3 +14,25 @@ class borrower_rgistration_form(borrower_rgistration_formTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.borrower_profile')
+
+  def link_2_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.new_loan_request')
+
+  def link_6_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('bank_users.borrower_rgistration_form.application_tracker')
+
+  def link_8_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    alert("logout sucessfully")
+    anvil.users.logout()
+    open_form('bank_users.main_form')
+
+  def home_borrower_registration_form_copy_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.main_form')
