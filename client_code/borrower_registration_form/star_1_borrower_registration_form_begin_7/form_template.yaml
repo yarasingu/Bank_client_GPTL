@@ -20,7 +20,7 @@ components:
     grid_position: FMFSWK,MYXNMW
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: Step - 8, font_size: null, font: '', spacing_above: small,
+    visible: true, text: Step - 7, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
     underline: false, icon: ''}
   name: label_1
