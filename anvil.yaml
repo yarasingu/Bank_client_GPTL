@@ -14,7 +14,7 @@ services:
 startup: {type: form, module: bank_users.main_form}
 package_name: bank_client
 allow_embedding: false
-name: Clone of Clone of bank_client
+name: P2p Bank
 runtime_options: {version: 2, client_version: '3', server_version: python3-sandbox,
   server_spec: null}
 metadata: {title: 'P2P Bank ', description: this app provide services to person who are ready to invest and ready to give loan}
