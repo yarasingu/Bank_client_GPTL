@@ -32,6 +32,7 @@ class main_form(main_formTemplate):
       if check_user_already_exist == None:
         user_module.add_email_and_user_id(user_email)
         main_form_module.email=user_email
+        borrower_main_form_module.userId = user_module.find_user_id(user_email)
         main_form_module.flag=True
         open_form('bank_users.user_form')
       else:
@@ -39,10 +40,12 @@ class main_form(main_formTemplate):
         if check_user_registration_form_done_or_not:
           main_form_module.email=user_email
           borrower_main_form_module.user_id = user_module.find_user_id(user_email)
+          borrower_main_form_module.userId = user_module.find_user_id(user_email)
           open_form('bank_users.borrower_rgistration_form')
         else:
           main_form_module.email=user_email
           main_form_module.flag=False
+          borrower_main_form_module.userId = user_module.find_user_id(user_email)
           open_form('bank_users.user_form')
     
   #form maping no need to change 

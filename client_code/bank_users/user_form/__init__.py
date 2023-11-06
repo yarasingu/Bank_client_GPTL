@@ -17,6 +17,7 @@ class user_form(user_formTemplate):
     email=self.email
     self.name = user_module.get_name(email)
     self.user_id =  user_module.find_user_id(email)
+    
     self.email = email
     self.user_name_lable.text = self.name
     if user_module.last_check_status(self.user_id):
