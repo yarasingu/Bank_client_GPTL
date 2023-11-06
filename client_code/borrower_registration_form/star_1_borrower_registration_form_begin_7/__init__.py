@@ -15,13 +15,17 @@ class star_1_borrower_registration_form_begin_7(star_1_borrower_registration_for
 
     # Any code you write here will run before the form opens.
 
+
+  
+
+  def home_borrower_registration_form_click(self, **event_args):
+    open_form('bank_users.user_form')
+
   def button_1_click(self, **event_args):
-    open_form('borrower_registration_form.star_3_borrower_registration_form_step_1')
-    """This method is called when the button is clicked"""
+    open_form('borrower_registration_form.star_1_borrower_registration_form_begin_6')
 
   def button_2_click(self, **event_args):
     open_form('borrower_registration_form.Form2')
-    """This method is called when the button is clicked"""
     
 
     

@@ -21,3 +21,4 @@ class Form26(Form26Template):
 
   def button_2_click(self, **event_args):
     alert("Successfully Submitted!")
+    open_form('bank_users.borrower_rgistration_form')

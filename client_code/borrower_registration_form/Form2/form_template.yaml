@@ -18,6 +18,7 @@ components:
   layout_properties:
     col_widths: {}
     grid_position: GSWXSO,SLDENE
+  event_bindings: {click: home_borrower_registration_form_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Step - 9, font_size: null, font: '', spacing_above: small,
