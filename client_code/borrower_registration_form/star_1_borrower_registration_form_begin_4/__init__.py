@@ -25,7 +25,10 @@ class star_1_borrower_registration_form_begin_4(star_1_borrower_registration_for
     spouse_name = self.borrower_registration_spouse_name_text.text
     marrege_date = self.marriage_date_date_pickeer.date
     user_id = self.userId
-    if not marital_status or not mother_toung or not spouse_name or not marrege_date
+    if not marital_status or not mother_toung or not spouse_name or not marrege_date:
+      Notification("please provide all Details")
+    else:
+    
     
     
     
