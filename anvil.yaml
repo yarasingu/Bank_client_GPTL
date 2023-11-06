@@ -89,9 +89,6 @@ db_schema:
     - name: last_confirm
       admin_ui: {width: 200, order: 17}
       type: bool
-    - name: mobile
-      admin_ui: {width: 200, order: 18}
-      type: string
     - name: mobile_check
       admin_ui: {width: 200, order: 19}
       type: bool
