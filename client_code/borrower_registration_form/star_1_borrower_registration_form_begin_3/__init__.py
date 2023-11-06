@@ -24,14 +24,14 @@ class star_1_borrower_registration_form_begin_3(star_1_borrower_registration_for
   
   def button_2_click(self, **event_args):
     aadhar= self.borrower_registration_aadhar_text.text
-    aadhar_card = self.borrower_registration_img_aadhar_file_loader
+    aadhar_card = self.borrower_registration_img_aadhar_file_loader.file
     pan = self.borrower_registration_pan_text.text
-    pan_card=self.borrower_registration_img_pan_file_loader
+    pan_card=self.borrower_registration_img_pan_file_loader.file
     user_id = self.userId
     if not aadhar or not aadhar_card or not pan or not pan_card:
       Notification("Please Fill The All required fileds")
     else:
       anvil.server.call('add_borrower_step3',aadhar,aadhar_card,pan,pan_card,user_id)
-      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_4')
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_4',user_id=user_id)
   
     

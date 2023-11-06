@@ -28,6 +28,13 @@ class star_1_borrower_registration_form_begin_4(star_1_borrower_registration_for
     if not marital_status or not mother_toung or not spouse_name or not marrege_date:
       Notification("please provide all Details")
     else:
+      anvil.server.call('add_borrower_step4',mother_toung,marital_status,spouse_name,marrege_date,user_id)
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_5',userId=user_id)
+
+  def button_1_click(self, **event_args):
+    open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3',userId=user_id)
+
+ 
     
     
     

@@ -77,9 +77,6 @@ db_schema:
     - name: profile_status
       admin_ui: {width: 200}
       type: bool
-    - name: aadhaar_no
-      admin_ui: {width: 200, order: 14}
-      type: number
     - name: pan_number
       admin_ui: {width: 200, order: 15}
       type: string
@@ -97,6 +94,33 @@ db_schema:
       type: string
     - name: mobile
       admin_ui: {width: 200, order: 14}
+      type: string
+    - name: mouther_tounge
+      admin_ui: {width: 200, order: 21}
+      type: string
+    - name: marital_status
+      admin_ui: {width: 200, order: 22}
+      type: string
+    - name: Date_mariage
+      admin_ui: {width: 200, order: 23}
+      type: date
+    - name: spouse_name
+      admin_ui: {width: 200, order: 24}
+      type: string
+    - name: spouse_mobile
+      admin_ui: {width: 200, order: 25}
+      type: string
+    - name: spouse_company_name
+      admin_ui: {width: 200, order: 26}
+      type: string
+    - name: spouse_company_address
+      admin_ui: {width: 200, order: 27}
+      type: string
+    - name: spouse_profficen
+      admin_ui: {width: 200, order: 28}
+      type: string
+    - name: aadhaar_no
+      admin_ui: {width: 200, order: 29}
       type: string
     title: user_profile
   borrower:

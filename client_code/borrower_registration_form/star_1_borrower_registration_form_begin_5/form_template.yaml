@@ -7,13 +7,14 @@ components:
     spacing_below: small, background: '', horizontal_align: center}
   type: Image
   layout_properties: {grid_position: 'EJZZKH,FRKMPR'}
-- name: home_borrower_registration_form_copy_1
+- name: home_borrower_registration_form_home_button
   properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:home'}
   type: Button
   layout_properties: {grid_position: 'EJZZKH,DPCHWH'}
+  event_bindings: {click: home_borrower_registration_form_home_button_click}
 - name: label_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Step-5, font_size: null, font: '', spacing_above: small,
@@ -42,28 +43,13 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'RCHYYW,UPDKPT'}
-- name: spouse_profession_borrower_registration_dropdown
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: ''
-    border: ''
-    enabled: true
-    foreground: ''
-    items: ['', 'Yes', 'No']
-    visible: true
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: small
-    italic: false
-    background: theme:On Primary
-    bold: false
-    underline: false
-    include_placeholder: false
-  type: DropDown
-  layout_properties: {grid_position: 'RCHYYW,KNZSOY'}
+- name: borrower_spouse_profession
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  type: TextBox
+  layout_properties: {grid_position: 'RCHYYW,DEWRMB'}
 - name: label_4_copy_1
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: 'Spouse Company Name
@@ -73,28 +59,13 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'JYYFHK,LZPOJH'}
-- name: spouse_company_name_borrower_registration_dropdown
-  properties:
-    role: null
-    align: full
-    tooltip: ''
-    placeholder: ''
-    border: ''
-    enabled: true
-    foreground: ''
-    items: ['', 'Yes', 'No']
-    visible: true
-    font_size: null
-    font: ''
-    spacing_above: small
-    spacing_below: small
-    italic: false
-    background: theme:On Primary
-    bold: false
-    underline: false
-    include_placeholder: false
-  type: DropDown
-  layout_properties: {grid_position: 'JYYFHK,PSQTMT'}
+- name: borrower_company_name
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  type: TextBox
+  layout_properties: {grid_position: 'JYYFHK,RFNMDX'}
 - name: label_5_copy_1
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Company Address, font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -102,27 +73,27 @@ components:
     icon: ''}
   type: Label
   layout_properties: {grid_position: 'SUXNQK,RKPWST'}
-- name: borrower_registration_comp_text
+- name: borrower_registration_company_adress_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
     background: 'theme:On Primary', bold: false, underline: false}
   type: TextBox
   layout_properties: {grid_position: 'SUXNQK,MXSWRV'}
-- name: button_1_copy_1
+- name: button_back_egin_4
   properties: {role: elevated-button, align: right, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: true, text: Prev, font_size: null, font: '', spacing_above: small,
+    foreground: black, visible: true, text: Prev, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:angle-double-left'}
   type: Button
   layout_properties: {grid_position: 'LOOVZA,QXFYKE'}
   event_bindings: {click: button_1_click}
-- name: button_2_copy_1
+- name: button_for_next_begin_6
   properties: {role: elevated-button, align: left, tooltip: '', border: '', enabled: true,
-    foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
+    foreground: black, visible: true, text: Next, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:angle-double-right'}
   type: Button
   layout_properties: {grid_position: 'LOOVZA,PDSHFE'}
-  event_bindings: {click: button_2_click}
+  event_bindings: {click: button_for_next_begin_6_click}
 is_package: true

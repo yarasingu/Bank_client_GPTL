@@ -9,7 +9,8 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class star_1_borrower_registration_form_begin_6(star_1_borrower_registration_form_begin_6Template):
-  def __init__(self, **properties):
+  def __init__(self,userId, **properties):
+    self.user_id=userId
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
