@@ -13,33 +13,6 @@ components:
     type: ColumnPanel
     layout_properties: {grid_position: 'QOFIQI,NSMFFQ'}
     components:
-    - name: image_1_copy_2
-      properties: {role: null, vertical_align: center, height: 56, tooltip: '', border: '',
-        foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
-        source: 'data:image/png;base64,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',
-        spacing_below: small, background: '', horizontal_align: center}
-      type: Image
-      layout_properties: {grid_position: 'BKWNJY,IVWHTD'}
-    - name: link_1_copy_1
-      properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: Black,
-        visible: true, text: Home, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-        spacing_above: small, icon_align: left, col_widths: '{}', spacing_below: small,
-        italic: false, background: '', bold: true, underline: false, icon: 'fa:home'}
-      type: Link
-      layout_properties: {grid_position: 'TSBAID,AYSOEW'}
-      event_bindings: {click: link_1_click}
-    - name: link_2_copy_1
-      properties: {role: null, url: '', align: right, tooltip: '', border: '', foreground: black,
-        visible: true, text: Logout, font_size: null, wrap_on: mobile, font: '', col_spacing: medium,
-        spacing_above: small, icon_align: left, col_widths: '', spacing_below: small,
-        italic: false, background: '', bold: true, underline: false, icon: 'fa:sign-out'}
-      type: Link
-      layout_properties: {grid_position: 'TSBAID,DPQGLL'}
-      event_bindings: {click: link_2_click}
-    - name: spacer_1_copy_1
-      properties: {height: 39}
-      type: Spacer
-      layout_properties: {grid_position: 'MXIXZT,JUFPEQ'}
     - name: grid_panel_1_copy_1
       properties: {}
       type: GridPanel
@@ -53,7 +26,7 @@ components:
         components:
         - name: button_3_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'View Opening Balance       ',
+            enabled: true, foreground: black, visible: true, text: 'View Profile    ',
             font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
             italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
@@ -68,10 +41,9 @@ components:
         components:
         - name: button_4_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'View Available
-              Balance        ', font_size: null, font: '', spacing_above: small, icon_align: left,
-            spacing_below: small, italic: false, background: '#0876e8', bold: false,
-            underline: false, icon: ''}
+            enabled: true, foreground: black, visible: true, text: 'New Loan       ',
+            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
           layout_properties: {row: RMAIPF, width_xs: 3, col_xs: 3, width: 220}
           event_bindings: {click: button_4_click}
@@ -83,7 +55,7 @@ components:
         components:
         - name: button_6_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'Loan Disbursement              ',
+            enabled: true, foreground: black, visible: true, text: 'Loan Close    ',
             font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
             italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
@@ -111,10 +83,9 @@ components:
         components:
         - name: outlined_button_3_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: '  View Closed
-              Loans           ', font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '#0876e8',
-            bold: false, underline: false, icon: ''}
+            enabled: true, foreground: black, visible: true, text: Application Tracker,
+            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
           layout_properties: {row: TLOMDU, width_xs: 3, col_xs: 0}
           event_bindings: {click: outlined_button_3_click}
@@ -125,7 +96,7 @@ components:
         components:
         - name: outlined_button_2_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'View Lost Opportunities     ',
+            enabled: true, foreground: black, visible: true, text: 'Loan Foreclosure ',
             font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
             italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
@@ -138,10 +109,9 @@ components:
         components:
         - name: outlined_button_6_copy_1
           properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'Request Top-up
-              Amount     ', font_size: null, font: '', spacing_above: small, icon_align: left,
-            spacing_below: small, italic: false, background: '#0876e8', bold: false,
-            underline: false, icon: ''}
+            enabled: true, foreground: black, visible: true, text: Discount Coupons,
+            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
+            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
           type: Button
           layout_properties: {}
           event_bindings: {click: outlined_button_6_click}
@@ -159,88 +129,6 @@ components:
           type: Button
           layout_properties: {}
           event_bindings: {click: outlined_button_7_click}
-      - name: linear_panel_9_copy_1
-        properties: {}
-        type: LinearPanel
-        layout_properties: {row: YGIAWT, width_xs: 3, col_xs: 0}
-        components:
-        - name: button_5_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'View Loan Requests              ',
-            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {row: RMAIPF, width_xs: 3, col_xs: 6, width: 220}
-          event_bindings: {click: button_5_click}
-      - name: linear_panel_10_copy_1
-        properties: {}
-        type: LinearPanel
-        layout_properties: {row: YGIAWT, width_xs: 3, col_xs: 3}
-        components:
-        - name: outlined_button_8_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'View/Edit Profile                      ',
-            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {}
-          event_bindings: {click: outlined_button_8_click}
-      - name: linear_panel_11_copy_1
-        properties: {}
-        type: LinearPanel
-        layout_properties: {row: YGIAWT, width_xs: 3, col_xs: 6}
-        components:
-        - name: outlined_button_9_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: ' View/Send Notifications     ',
-            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {}
-          event_bindings: {click: outlined_button_9_click}
-      - name: linear_panel_12_copy_1
-        properties: {}
-        type: LinearPanel
-        layout_properties: {row: YGIAWT, width_xs: 3, col_xs: 9}
-        components:
-        - name: outlined_button_10_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: 'Change Password                       ',
-            font_size: null, font: '', spacing_above: small, icon_align: left, spacing_below: small,
-            italic: false, background: '#0876e8', bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {}
-          event_bindings: {click: outlined_button_10_click}
-      - name: linear_panel_13_copy_1
-        properties: {}
-        type: LinearPanel
-        layout_properties: {row: BTZOAV, width_xs: 3, col_xs: 0}
-        components:
-        - name: outlined_button_4_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: '  View Loan Extension
-              Requests             ', font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '#0876e8',
-            bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {row: BTZOAV, width_xs: 3, col_xs: 9, grid_position: 'JIOFFP,KAFLOF'}
-          event_bindings: {click: outlined_button_4_click}
-      - name: linear_panel_14_copy_1
-        properties: {spacing_above: small, spacing_below: small, background: '', foreground: black,
-          border: '', visible: true, role: null, tooltip: ''}
-        type: LinearPanel
-        layout_properties: {row: BTZOAV, width_xs: 3, col_xs: 3, width: 220}
-        components:
-        - name: outlined_button_5_copy_1
-          properties: {role: outlined-button, align: center, tooltip: '', border: '',
-            enabled: true, foreground: black, visible: true, text: "  View Loan \n\
-              Foreclosure Requests              ", font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '#0876e8',
-            bold: false, underline: false, icon: ''}
-          type: Button
-          layout_properties: {grid_position: 'VJBXBT,ENKKQT', row: BTZOAV, width_xs: 3,
-            col_xs: 0, width: 970}
-          event_bindings: {click: outlined_button_5_click}
 - type: FlowPanel
   properties: {spacing: medium, align: left, vertical_align: middle}
   name: navbar_links
@@ -276,14 +164,10 @@ components:
     type: Button
     event_bindings: {click: about_borrower_registration_form__click}
     layout_properties: {}
-  - name: location_borrower_main_form
-    properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
-      foreground: black, visible: true, text: Location, font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '#0876E8', bold: true, underline: false, icon: 'fa:location-arrow'}
-    type: Button
-    event_bindings: {click: location_borrower_main_form_click}
-    layout_properties: {}
+  - name: link_8
+    properties: {text: Logout, bold: true}
+    type: Link
+    event_bindings: {click: link_8_click}
 - name: column_panel_1
   properties: {role: outlined-card}
   type: ColumnPanel
@@ -319,11 +203,6 @@ components:
     type: Link
     layout_properties: {grid_position: 'PWHLCF,XGZRPR'}
     event_bindings: {click: link_6_click}
-  - name: link_8
-    properties: {text: Logout, bold: true}
-    type: Link
-    layout_properties: {grid_position: ''}
-    event_bindings: {click: link_8_click}
 - name: label_1
   properties: {text: User Name, bold: true, icon: 'fa:user', role: headline}
   type: Label
