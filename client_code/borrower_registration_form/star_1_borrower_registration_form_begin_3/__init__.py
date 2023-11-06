@@ -32,6 +32,6 @@ class star_1_borrower_registration_form_begin_3(star_1_borrower_registration_for
       Notification("Please Fill The All required fileds")
     else:
       anvil.server.call('add_borrower_step3',aadhar,aadhar_card,pan,pan_card,user_id)
-      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_4',userid=user_id)
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_4')
   
     
