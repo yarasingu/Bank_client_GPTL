@@ -95,6 +95,9 @@ db_schema:
     - name: city
       admin_ui: {width: 200, order: 15}
       type: string
+    - name: mobile
+      admin_ui: {width: 200, order: 14}
+      type: string
     title: user_profile
   borrower:
     title: borrower
