@@ -14,3 +14,5 @@ from anvil.tables import app_tables
 #
 
 user_id=""
+
+userId = 0

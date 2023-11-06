@@ -122,6 +122,9 @@ db_schema:
     - name: aadhaar_no
       admin_ui: {width: 200, order: 29}
       type: string
+    - name: usertype
+      admin_ui: {order: 30, width: 200}
+      type: string
     title: user_profile
   borrower:
     title: borrower
