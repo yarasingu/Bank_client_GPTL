@@ -128,6 +128,9 @@ db_schema:
     - name: user_age
       admin_ui: {width: 200, order: 7.5}
       type: number
+    - name: registration_approve
+      admin_ui: {width: 200, order: 31}
+      type: bool
     title: user_profile
   borrower:
     title: borrower
@@ -143,8 +146,8 @@ db_schema:
     - name: user_name
       admin_ui: {width: 200, order: 2}
       type: string
-    - name: max_ammount
-      admin_ui: {width: 200, order: 3}
+    - name: max_amount
+      admin_ui: {order: 3, width: 200}
       type: number
     - name: out_standing_amount
       admin_ui: {width: 200, order: 4}
@@ -152,6 +155,12 @@ db_schema:
     - name: loan_id
       admin_ui: {width: 200, order: 5}
       type: number
+    - name: admin_approve
+      admin_ui: {width: 200, order: 6}
+      type: bool
+    - name: borrowing_status
+      admin_ui: {width: 200, order: 7}
+      type: bool
   product_borrower:
     client: none
     server: full

@@ -7,6 +7,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
+# this is the method for user_id generate ----> start hear
 
 def generate_user_id():
     full_table = app_tables.user_profile.search()
@@ -28,10 +29,13 @@ def find_highest_amigos_id():
 # It creates the ID for only new users
 def add_email_and_user_id(email_id):
     generated_id = generate_user_id()
-    app_tables.user_profile.add_row(email_user=email_id, coustmer_id=generated_id)
+    app_tables.user_profile.add_row(email_user=email_id, coustmer_id=generated_id,registration_approve=False,profile_status=False)
+
+#----- end hear ----- #
 
 
-# The method checks whether the user exists or not
+
+# The method check for new user or existing user using email from current user ---> start hear
 def check_user_profile(email_id):
     user_check = app_tables.user_profile.search(email_user=email_id)
     if user_check:
@@ -41,6 +45,9 @@ def check_user_profile(email_id):
     else:
         return False
 
+# ---> end hear ----#
+
+# -- this method is used to split the name --->start hear --->
 
 def get_name(email):
   parts = email.split("@")
@@ -48,7 +55,9 @@ def get_name(email):
     split_name = parts[0]
     return split_name
 
+#----end hear --->
 
+# -- this method is used to find the user id based on current email --> start hear -->
 def find_user_id(email):
   user_true = app_tables.user_profile.search(email_user=email)
   if user_true:
@@ -56,6 +65,9 @@ def find_user_id(email):
     return coustmer_id
   else:
     return 0000000000
+
+# --- end hear -->
+
 
 def last_check_status(user_id):
   return False
@@ -80,6 +92,7 @@ def registration_engine():
 def check_user_registration_form_done_or_not_engine(email):
   userId = find_user_id(email)
   print(userId)
+  user_data = app_tables.user_profile.g
   user_talble = app_tables.user_profile.get_by_id(userId)
   print(user_talble)
   if user_talble:

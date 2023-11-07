@@ -25,29 +25,29 @@ class main_form(main_formTemplate):
     if current_user:
       user_email = current_user['email']
       print(user_email)
-      print(user_email)
       check_user_already_exist = user_module.check_user_profile(user_email)
       print(check_user_already_exist)
-      
+
+      # this statement is used to check whether the user is new or old
       if check_user_already_exist == None:
         user_module.add_email_and_user_id(user_email)
         main_form_module.email=user_email
-        borrower_main_form_module.userId = user_module.find_user_id(user_email)
         main_form_module.flag=True
         open_form('bank_users.user_form')
       else:
-        check_user_registration_form_done_or_not = user_module.check_user_registration_form_done_or_not_engine(user_email)
-        if check_user_registration_form_done_or_not:
+        # then her check the user is completed borrower registration form or not 
+        check_user_registration= user_module.check_user_registration_form_done_or_not_engine(user_email)
+        if check_user_registration:
           main_form_module.email=user_email
-          borrower_main_form_module.user_id = user_module.find_user_id(user_email)
-          borrower_main_form_module.userId = user_module.find_user_id(user_email)
           open_form('bank_users.borrower_rgistration_form')
         else:
           main_form_module.email=user_email
           main_form_module.flag=False
-          borrower_main_form_module.userId = user_module.find_user_id(user_email)
           open_form('bank_users.user_form')
-    
+
+
+
+  
   #form maping no need to change 
   def about_main_form_link_click(self, **event_args):
     open_form('bank_users.main_form.about_main_form')
