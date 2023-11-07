@@ -18,7 +18,7 @@ class check_out_form(check_out_formTemplate):
         # Fetch the data for the specific user from your table
     user_request = app_tables.user_profile.get(coustmer_id=self.coustmer_id)
     interest_rate = 0.05
-    processing_fee = 500
+   
       
     if user_request:
             min_amount = float(user_request['min_amount'])  # Convert to float

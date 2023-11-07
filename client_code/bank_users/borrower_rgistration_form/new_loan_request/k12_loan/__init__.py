@@ -20,7 +20,7 @@ class k12_loan(k12_loanTemplate):
 
   def button_1_click(self, **event_args):
     
-    open_form('bank_users.borrower_rgistration_form.new_loan_request.check_out_form')
+     open_form('bank_users.borrower_rgistration_form.new_loan_request.check_out_form')
     
 
   def button_3_click(self, **event_args):
