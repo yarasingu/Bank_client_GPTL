@@ -1,0 +1,79 @@
+container: {type: ColumnPanel}
+components:
+- name: image_1_copy_1_copy_1_copy_1
+  properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+    source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'XZHWKK,WXLVDS'}
+- name: home_borrower_registration_form_copy_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
+  type: Button
+  layout_properties: {grid_position: 'XZHWKK,SMXOSF'}
+  event_bindings: {click: home_borrower_registration_form_copy_1_click}
+- name: label_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Step-4, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'TSUCYZ,KEYCKF'}
+- name: label_5_copy_1
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Spouse Name : ', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'IVDTSR,JUKRTC'}
+- name: borrower_registration_spouse_name_text
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  type: TextBox
+  layout_properties: {grid_position: 'IVDTSR,ZIPEOK'}
+- name: label_2_copy_1
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Marriage Date : ', font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: true, underline: false,
+    icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'JFBNYL,IDGGEK RSTDCL,LSELQK'}
+- name: label_2_copy_1_copy_1
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: 'Spouse mobile Number :', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'JFBNYL,IDGGEK IVDLPA,DPLDOO'}
+- name: marriage_date_date_pickeer
+  properties: {role: null, align: left, max_date: '', pick_time: false, tooltip: '',
+    placeholder: '', border: '', enabled: true, foreground: '', visible: true, font_size: null,
+    font: '', spacing_above: small, spacing_below: small, italic: false, date: '',
+    min_date: '', background: 'theme:On Primary', bold: false, underline: false, format: ''}
+  type: DatePicker
+  layout_properties: {grid_position: 'JFBNYL,URPWGS DLQXCL,NNIIHU'}
+- name: borrower_registration_spouse_mobile_text_copy_1
+  properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
+    border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+    font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+    background: 'theme:On Primary', bold: false, underline: false}
+  type: TextBox
+  layout_properties: {grid_position: 'JFBNYL,URPWGS MHGWNT,EYJDBU'}
+- name: button_for_begin_3
+  properties: {text: prev, background: '#0876E8', icon: 'fa:angle-double-left', foreground: black,
+    bold: true}
+  type: Button
+  layout_properties: {grid_position: 'WJRHME,SGTAPB'}
+  event_bindings: {click: button_1_click}
+- name: submit_4_borrower_registration_form
+  properties: {text: next, background: '#0876E8', icon: 'fa:angle-double-right', foreground: black,
+    bold: true}
+  type: Button
+  layout_properties: {grid_position: 'WJRHME,ZHFFOW'}
+  event_bindings: {click: submit_4_borrower_registration_form_click}
+is_package: true
+custom_component: false

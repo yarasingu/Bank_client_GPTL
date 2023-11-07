@@ -53,7 +53,7 @@ components:
     border: ''
     enabled: true
     foreground: ''
-    items: ['', Male, Female, Others]
+    items: [Male, Female, Others]
     visible: true
     font_size: null
     font: ''

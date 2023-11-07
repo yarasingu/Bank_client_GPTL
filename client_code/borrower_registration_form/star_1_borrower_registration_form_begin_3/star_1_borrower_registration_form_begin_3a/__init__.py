@@ -14,3 +14,6 @@ class star_1_borrower_registration_form_begin_3a(star_1_borrower_registration_fo
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+  def home_borrower_registration_form_copy_1_click(self, **event_args):
+    open_form('bank_users.user_form')

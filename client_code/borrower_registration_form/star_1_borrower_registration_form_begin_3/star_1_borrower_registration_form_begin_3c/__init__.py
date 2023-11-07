@@ -1,4 +1,4 @@
-from ._anvil_designer import star_1_borrower_registration_form_begin_3bTemplate
+from ._anvil_designer import star_1_borrower_registration_form_begin_3cTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -8,7 +8,7 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class star_1_borrower_registration_form_begin_3b(star_1_borrower_registration_form_begin_3bTemplate):
+class star_1_borrower_registration_form_begin_3c(star_1_borrower_registration_form_begin_3cTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)

@@ -1,0 +1,72 @@
+container:
+  type: ColumnPanel
+  properties: {col_widths: '{"HZJEQT":20,"WJHAFA":40}'}
+components:
+- name: image_1_copy_1_copy_1_copy_1_copy_1
+  properties: {role: null, vertical_align: center, height: 48, tooltip: '', border: '',
+    foreground: '', visible: true, display_mode: shrink_to_fit, spacing_above: small,
+    source: _/theme/kotackpng.png, spacing_below: small, background: '', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'LIRLTN,HIHALF'}
+- name: home_borrower_registration_form_copy_1_copy_1
+  properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
+    foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+    bold: true, underline: false, icon: 'fa:home'}
+  type: Button
+  layout_properties: {grid_position: 'LIRLTN,CBTBON'}
+  event_bindings: {click: home_borrower_registration_form_copy_1_click}
+- name: spacer_1_copy_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'EJPCLL,ONCBAK'}
+- name: label_1_copy_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: Step-3c, font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'BZLCAJ,QVPCZX'}
+- name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'EZHUHG,ERHLQM'}
+- name: label_3_copy_1_copy_1
+  properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+    visible: true, text: 'Profession : ', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: false, icon: ''}
+  type: Label
+  layout_properties: {grid_position: 'CJDOQG,OEJRUX'}
+- name: Profesion_borrower_registration_form_drop_down
+  properties:
+    role: null
+    align: full
+    tooltip: ''
+    placeholder: ''
+    border: ''
+    enabled: true
+    foreground: ''
+    items: [Self, Business, Employee]
+    visible: true
+    font_size: null
+    font: ''
+    spacing_above: small
+    spacing_below: small
+    italic: false
+    background: theme:On Primary
+    bold: false
+    underline: false
+    include_placeholder: false
+  type: DropDown
+  layout_properties: {grid_position: 'CJDOQG,GWTJQD'}
+- name: button_1_copy_1_copy_1
+  properties: {text: prev, background: '#0876E8', icon: 'fa:angle-double-left', align: right,
+    foreground: black, bold: true}
+  type: Button
+  layout_properties: {grid_position: 'CALRHW,HZJEQT'}
+- name: spacer_1_copy_2
+  properties: {height: 32}
+  type: Spacer
+  layout_properties: {grid_position: 'CALRHW,WJHAFA'}
+is_package: true
