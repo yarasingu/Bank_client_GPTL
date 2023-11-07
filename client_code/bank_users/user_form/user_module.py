@@ -29,11 +29,9 @@ def find_highest_amigos_id():
 # It creates the ID for only new users
 def add_email_and_user_id(email_id):
     generated_id = generate_user_id()
-    app_tables.user_profile.add_row(email_user=email_id, coustmer_id=generated_id,registration_approve=False,profile_status=False)
+    app_tables.user_profile.add_row(email_user=email_id, coustmer_id=generated_id,registration_approve=False,profile_status=False,mobile_check=False,last_confirm=False)
 
 #----- end hear ----- #
-
-
 
 # The method check for new user or existing user using email from current user ---> start hear
 def check_user_profile(email_id):
@@ -92,15 +90,14 @@ def registration_engine():
 def check_user_registration_form_done_or_not_engine(email):
   userId = find_user_id(email)
   print(userId)
-  user_data = app_tables.user_profile.g
-  user_talble = app_tables.user_profile.get_by_id(userId)
+  user_talble = app_tables.user_profile.get(coustmer_id=userId)
   print(user_talble)
-  if user_talble:
-    check_one = user_talble['last_confirm']
-    print("check one form last check  ", check_one)
-    return check_one
-  else:
-    print("else statement was executed ")
+  if user_talble == None:
+    print("if statement was executed ")
     return False
+  else:
+    check_one = user_talble['last_confirm']
+    print("else statement was executed ")
+    return check_one
     
   

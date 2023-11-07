@@ -4,7 +4,7 @@ container:
   properties: {html: '@theme:standard-page.html', tooltip: Home}
 components:
 - name: column_panel_3
-  properties: {col_widths: '{"HOLUNA":40,"JLWAJS":20,"PWLWRA":20}'}
+  properties: {col_widths: '{"JLWAJS":17,"PWLWRA":17,"UUZVNP":13,"YKUCTZ":13}', col_spacing: tiny}
   type: ColumnPanel
   layout_properties: {slot: default}
   components:
@@ -21,15 +21,13 @@ components:
     properties: {height: 26}
     name: spacer_1
     layout_properties: {grid_position: 'KLNXFH,OAFBJY'}
-  - type: Label
+  - name: label_2_copy_copy_1_copy_1
     properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Regester with Borrower or Lendor ', font_size: null, font: '',
-      spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: true, icon: ''}
-    name: label_2_copy
-    layout_properties:
-      col_widths: {}
-      grid_position: YBRDSP,HOLUNA
+      visible: true, text: 'Regester Borrower ', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: true, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'YBRDSP,UUZVNP'}
   - type: Button
     properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Borrower, font_size: null, font: '', spacing_above: small,
@@ -38,6 +36,13 @@ components:
     name: borrower_user_form_link
     layout_properties: {grid_position: 'YBRDSP,JLWAJS'}
     event_bindings: {click: borrower_user_form_link_click}
+  - name: label_2_copy_copy_1
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Regester Lendor ', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: true, icon: ''}
+    type: Label
+    layout_properties: {grid_position: 'YBRDSP,YKUCTZ'}
   - type: Button
     properties: {role: filled-button, align: center, tooltip: '', border: '', enabled: true,
       foreground: '', visible: true, text: Lendor, font_size: null, font: '', spacing_above: small,

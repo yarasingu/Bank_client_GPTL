@@ -161,6 +161,9 @@ db_schema:
     - name: borrowing_status
       admin_ui: {width: 200, order: 7}
       type: bool
+    - name: borrower_approve_date_time
+      admin_ui: {width: 200, order: 8}
+      type: datetime
   product_borrower:
     client: none
     server: full

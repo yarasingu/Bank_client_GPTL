@@ -30,6 +30,7 @@ class main_form(main_formTemplate):
 
       # this statement is used to check whether the user is new or old
       if check_user_already_exist == None:
+        print("main if statement was executed")
         user_module.add_email_and_user_id(user_email)
         main_form_module.email=user_email
         main_form_module.flag=True
@@ -37,6 +38,7 @@ class main_form(main_formTemplate):
       else:
         # then her check the user is completed borrower registration form or not 
         check_user_registration= user_module.check_user_registration_form_done_or_not_engine(user_email)
+        print("main else statement was executed")
         if check_user_registration:
           main_form_module.email=user_email
           open_form('bank_users.borrower_rgistration_form')
