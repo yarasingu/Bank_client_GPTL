@@ -33,6 +33,8 @@ class new_loan_request(new_loan_requestTemplate):
     tenure = self.tenure.selected_value
     anvil.server.call('add_user_profile', min_amount, tenure, max_amount)
 
+  
+
 
 
 

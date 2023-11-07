@@ -86,6 +86,7 @@ components:
   - name: check_box_1
     properties: {text: I have read and agree to the}
     type: CheckBox
+    event_bindings: {change: check_box_1_change}
   - name: link_1
     properties: {text: Terms and Conditions, icon: 'fa:info-circle'}
     type: Link
