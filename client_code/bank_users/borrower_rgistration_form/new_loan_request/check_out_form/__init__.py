@@ -12,12 +12,17 @@ class check_out_form(check_out_formTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
+    self.names= 'K-12 Educational loan'
+    user_request = app_tables.product_borrower.get(names=self.names)
+    interest_rate = user_request['interest_rate']
+    self.int_rate.text=f" Interest rate : {interest_rate}"
     self.coustmer_id = 1000
 
        
         # Fetch the data for the specific user from your table
     user_request = app_tables.user_profile.get(coustmer_id=self.coustmer_id)
     interest_rate = 0.05
+    
    
       
     if user_request:
