@@ -40,11 +40,9 @@ components:
     col_widths: {}
     grid_position: RIFDPA,FXDAEC
 - name: max_amount
-  properties:
-    items: ['1000000']
-    background: white
-  type: DropDown
-  layout_properties: {grid_position: 'RIFDPA,ZMZBAY'}
+  properties: {text: ''}
+  type: Label
+  layout_properties: {grid_position: 'RIFDPA,WXMQBR'}
 - type: Label
   properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
     text: Tenure, font_size: null, font: '', spacing_above: small, icon_align: left,
