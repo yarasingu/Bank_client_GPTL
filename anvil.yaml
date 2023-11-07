@@ -119,11 +119,20 @@ db_schema:
     - name: spouse_profficen
       admin_ui: {width: 200, order: 28}
       type: string
-    - name: aadhaar_no
-      admin_ui: {width: 200, order: 29}
-      type: string
     - name: usertype
       admin_ui: {order: 30, width: 200}
+      type: string
+    - name: max_amount
+      admin_ui: {width: 200}
+      type: string
+    - name: min_amount
+      admin_ui: {width: 200}
+      type: string
+    - name: repayment
+      admin_ui: {width: 200}
+      type: string
+    - name: aadhaar_no
+      admin_ui: {width: 200, order: 28}
       type: string
     title: user_profile
   borrower:
