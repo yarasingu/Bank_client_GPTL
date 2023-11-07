@@ -24,11 +24,6 @@ class loan_type(loan_typeTemplate):
   def button_2_click(self, **event_args):
     open_form('bank_users.borrower_rgistration_form.new_loan_request')
 
- 
-  def button_1_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    open_form('bank_users.borrower_rgistration_form.new_loan_request.check_out_form')
-
   def drop_down_1_change(self, **event_args):
 
     value=self.drop_down_1.selected_value 
