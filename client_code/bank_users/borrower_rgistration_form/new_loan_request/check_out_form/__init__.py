@@ -67,5 +67,5 @@ class check_out_form(check_out_formTemplate):
     open_form('bank_users.borrower_rgistration_form')
 
   def button_1_click(self, **event_args):
-   open_form('bank_users.borrower_rgistration_form.new_loan_request.k12_loan')
+   open_form('bank_users.borrower_rgistration_form')
     
