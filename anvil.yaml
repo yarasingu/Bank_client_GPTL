@@ -165,5 +165,8 @@ db_schema:
     - name: names
       admin_ui: {width: 200, order: 0}
       type: string
+    - name: interest_rate
+      admin_ui: {width: 200, order: 1}
+      type: number
     title: product_borrower
 renamed: true

@@ -1,7 +1,7 @@
 container: {type: ColumnPanel}
 components:
 - name: image_1
-  properties: {}
+  properties: {source: _/theme/kotak.png, height: '45', horizontal_align: left}
   type: Image
   layout_properties: {grid_position: 'KAZWEW,QJGDGE'}
 - name: button_1_copy_1
@@ -12,4 +12,29 @@ components:
   type: Button
   layout_properties: {grid_position: 'KAZWEW,KCJZME'}
   event_bindings: {click: button_1_click}
+- name: spacer_1
+  properties: {height: 88}
+  type: Spacer
+  layout_properties: {grid_position: 'UTRDEY,ACZGWY'}
+- name: int_rate
+  properties: {text: '', bold: true}
+  type: Label
+  layout_properties: {grid_position: 'XKRUZN,XZFVZC'}
+- name: pro_fee
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'XKRUZN,FXEPAT'}
+- name: trp_amount
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'ZXOTPZ,KZFOBE'}
+- name: emi_details
+  properties: {}
+  type: Label
+  layout_properties: {grid_position: 'MANEFE,MSZFGE'}
+- name: submit
+  properties: {text: SUBMIT, background: '#0876E8', foreground: black, bold: false}
+  type: Button
+  layout_properties: {grid_position: 'OUVTKF,PWFWPZ'}
+  event_bindings: {click: submit_click}
 is_package: true

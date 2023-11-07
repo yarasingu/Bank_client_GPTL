@@ -63,7 +63,7 @@ components:
     border: ''
     enabled: true
     foreground: ''
-    items: [12 Months, 24 Months, 36 Months, 48 Months, '']
+    items: ['6', '12', '18', '24', '30', '36', '42', '48', '']
     visible: true
     font_size: null
     font: ''
@@ -74,7 +74,7 @@ components:
     bold: false
     underline: false
     include_placeholder: true
-  name: drop_down_3_copy
+  name: tenure
   layout_properties:
     col_widths: {}
     grid_position: XAMTRF,DVEKRQ

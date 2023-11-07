@@ -21,38 +21,8 @@ class k12_loan(k12_loanTemplate):
   def button_1_click(self, **event_args):
     
     open_form('bank_users.borrower_rgistration_form.new_loan_request.check_out_form')
-    self.user_id = '1000'
+    
 
-       
-        # Fetch the data for the specific user from your table
-    user_request = app_tables.new_loan_request.get(user_id=self.user_id)
-    interest_rate = 0.05
-    processing_fee = 500
-      
-    if user_request:
-            min_amount = float(user_request['min_amount'])  # Convert to float
-            tenure = float(user_request['tenure'])  # Convert to float
-            max_amount = float(user_request['max_amount'])  # Convert to float
-            
-            # Calculate total repayment amount using the specified formula
-            total_repayment_min = min_amount * (1 + interest_rate * tenure)
-            total_repayment_max = max_amount * (1 + interest_rate * tenure)
-            total_repayment = total_repayment_max + total_repayment_min
-  
-
-            # Display the total repayment in the 'rp_amount' label
-            self.trp_amount.text = f"Total Repayment Amount : {total_repayment}"
-            P = float(total_repayment)  # Convert to float
-            r = float(interest_rate) / 12 / 100  # Convert to float and calculate monthly interest rate
-            n = int(tenure)  # Convert to integer
-
-         # Calculate EMI using the correct exponentiation operator (**) for raising to a power
-            emi = P * r * (1 + r)**n / ((1 + r)**n - 1)
-
-          # Display EMI in a label
-            self.emi_details.text = f"EMI Details: {emi:.2f}"  # Display EMI rounded to two decimal places
-
-    else:
-            self.trp_amount.text = f"User {self.user_id} not found or data not available."
-            self.int_rate.text = f"Interest Rate :{interest_rate} pa" 
-            self.pro_fee.text = f"Processing Fee : {processing_fee}"
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.borrower_rgistration_form.new_loan_request')
