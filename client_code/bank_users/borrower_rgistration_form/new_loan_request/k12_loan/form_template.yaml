@@ -2,6 +2,16 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- name: image_1
+  properties: {source: _/theme/kotak.png, height: '45', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'OWBKFF,IDYUPH'}
+- name: button_3
+  properties: {text: Home, icon_align: left, background: '#0876E8', foreground: black,
+    icon: 'fa:home', align: right}
+  type: Button
+  layout_properties: {grid_position: 'OWBKFF,BEUTXI'}
+  event_bindings: {click: button_3_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: K-12 Education Loan, font_size: null, font: '', spacing_above: small,
@@ -95,9 +105,9 @@ components:
   event_bindings: {click: button_2_click}
 - type: Button
   properties: {role: elevated-button, align: center, tooltip: '', border: '', enabled: true,
-    foreground: black, visible: true, text: SAVE, font_size: null, font: '', spacing_above: small,
+    foreground: black, visible: true, text: Next, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
-    bold: false, underline: false, icon: 'fa:floppy-o'}
+    bold: false, underline: false, icon: 'fa:angle-double-right'}
   name: button_1
   layout_properties:
     col_widths: {}

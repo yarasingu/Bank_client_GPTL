@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: bank_users.main_form}
+startup: {type: form, module: bank_users.borrower_rgistration_form.new_loan_request}
 package_name: bank_client
 allow_embedding: false
 name: P2p Bank
@@ -119,11 +119,20 @@ db_schema:
     - name: spouse_profficen
       admin_ui: {width: 200, order: 28}
       type: string
-    - name: aadhaar_no
-      admin_ui: {width: 200, order: 29}
-      type: string
     - name: usertype
       admin_ui: {order: 30, width: 200}
+      type: string
+    - name: max_amount
+      admin_ui: {width: 200}
+      type: string
+    - name: min_amount
+      admin_ui: {width: 200}
+      type: string
+    - name: aadhaar_no
+      admin_ui: {width: 200, order: 28}
+      type: string
+    - name: tenure
+      admin_ui: {width: 200, order: 17.5}
       type: string
     title: user_profile
   borrower:
@@ -156,5 +165,8 @@ db_schema:
     - name: names
       admin_ui: {width: 200, order: 0}
       type: string
+    - name: interest_rate
+      admin_ui: {width: 200, order: 1}
+      type: number
     title: product_borrower
 renamed: true
