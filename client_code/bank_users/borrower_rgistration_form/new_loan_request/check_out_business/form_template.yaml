@@ -1,45 +1,45 @@
 container: {type: ColumnPanel}
 components:
-- name: image_1
+- name: image_1_copy_1
   properties: {source: _/theme/kotak.png, height: '45', horizontal_align: left}
   type: Image
-  layout_properties: {grid_position: 'KAZWEW,QJGDGE'}
-- name: button_1
+  layout_properties: {grid_position: 'VWNLLO,CXCSKP'}
+- name: button_2
   properties: {role: tonal-button, align: right, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Home, font_size: null, font: '', spacing_above: small,
     icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
     bold: true, underline: false, icon: 'fa:home'}
   type: Button
-  layout_properties: {grid_position: 'KAZWEW,KCJZME'}
-  event_bindings: {click: button_1_click}
-- name: spacer_1
+  layout_properties: {grid_position: 'VWNLLO,EQTDRU'}
+  event_bindings: {click: button_2_click}
+- name: spacer_1_copy_1
   properties: {height: 88}
   type: Spacer
-  layout_properties: {grid_position: 'UTRDEY,ACZGWY'}
+  layout_properties: {grid_position: 'KZVKUS,BDGNWG'}
 - name: int_rate
-  properties: {text: '', bold: true}
+  properties: {text: '', bold: false}
   type: Label
-  layout_properties: {grid_position: 'XKRUZN,XZFVZC'}
+  layout_properties: {grid_position: 'RQRGUL,MPFMEL'}
 - name: pro_fee
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'XKRUZN,FXEPAT'}
+  layout_properties: {grid_position: 'RQRGUL,ULFXRE'}
 - name: trp_amount
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'ZXOTPZ,KZFOBE'}
+  layout_properties: {grid_position: 'DFPYAW,LDYDJN'}
 - name: emi_details
   properties: {}
   type: Label
-  layout_properties: {grid_position: 'MANEFE,MSZFGE'}
-- name: button_2
+  layout_properties: {grid_position: 'WAYWIM,OSKZBE'}
+- name: button_1
   properties: {text: Back, background: '#0876E8', foreground: black, icon: 'fa:angle-double-left'}
   type: Button
-  layout_properties: {grid_position: 'OUVTKF,LFYHPC'}
-  event_bindings: {click: button_2_click}
+  layout_properties: {grid_position: 'ZPYJNO,QJAJNZ'}
+  event_bindings: {click: button_1_click}
 - name: submit
   properties: {text: SUBMIT, background: '#0876E8', foreground: black, bold: false}
   type: Button
-  layout_properties: {grid_position: 'OUVTKF,PWFWPZ'}
+  layout_properties: {grid_position: 'ZPYJNO,NQCOJJ'}
   event_bindings: {click: submit_click}
 is_package: true
