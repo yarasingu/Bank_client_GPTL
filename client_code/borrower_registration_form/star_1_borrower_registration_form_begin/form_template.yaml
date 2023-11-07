@@ -18,7 +18,7 @@ components:
   event_bindings: {click: home_borrower_registration_form_click}
 - name: label_1_copy_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'Borrower  Registration Form : ', font_size: null, font: '',
+    visible: true, text: 'Borrower  Registration Form  ', font_size: 27, font: '',
     spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
     bold: true, underline: false, icon: ''}
   type: Label

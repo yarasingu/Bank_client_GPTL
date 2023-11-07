@@ -99,5 +99,3 @@ def check_user_registration_form_done_or_not_engine(email):
     check_one = user_talble['last_confirm']
     print("else statement was executed ")
     return check_one
-    
-  
