@@ -68,4 +68,4 @@ class check_out_business(check_out_businessTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('bank_users.borrower_rgistration_form')
+    open_form('bank_users.borrower_rgistration_form.new_loan_request.business_loan')

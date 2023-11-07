@@ -2,6 +2,16 @@ container:
   type: ColumnPanel
   properties: {col_widths: '{}'}
 components:
+- name: image_1
+  properties: {source: _/theme/kotak.png, height: '45', horizontal_align: left}
+  type: Image
+  layout_properties: {grid_position: 'OWQZZP,KCJGIV'}
+- name: button_3
+  properties: {text: Home, icon: 'fa:home', align: right, bold: true, background: '#0876E8',
+    foreground: black}
+  type: Button
+  layout_properties: {grid_position: 'OWQZZP,ZGVUEW'}
+  event_bindings: {click: button_3_click}
 - type: Label
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
     visible: true, text: Loan Application, font_size: null, font: '', spacing_above: small,

@@ -36,6 +36,7 @@ components:
   properties: {text: Back, background: '#0876E8', foreground: black, icon: 'fa:angle-double-left'}
   type: Button
   layout_properties: {grid_position: 'OUVTKF,INTWBV'}
+  event_bindings: {click: button_1_click}
 - name: submit
   properties: {text: SUBMIT, background: '#0876E8', foreground: black, bold: false}
   type: Button

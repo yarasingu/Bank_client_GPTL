@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: bank_users.borrower_rgistration_form}
+startup: {type: form, module: bank_users.borrower_rgistration_form.new_loan_request}
 package_name: bank_client
 allow_embedding: false
 name: P2p Bank
