@@ -19,7 +19,11 @@ class new_loan_request(new_loan_requestTemplate):
     max_amount = user_request['max_amount']
     self.max_amount.text=f"{max_amount}"
   def button_1_copy_click(self, **event_args):
-    open_form('bank_users.borrower_rgistration_form.new_loan_request.loan_type')
+    if self.check_box_1.checked:
+     open_form('bank_users.borrower_rgistration_form.new_loan_request.loan_type') 
+    else:
+      alert('Please select Terms and Conditions')
+    
 
   def button_1_click(self, **event_args):
     open_form('bank_users.borrower_rgistration_form')

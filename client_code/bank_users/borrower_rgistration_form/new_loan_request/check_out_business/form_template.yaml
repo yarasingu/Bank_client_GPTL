@@ -32,6 +32,10 @@ components:
   properties: {}
   type: Label
   layout_properties: {grid_position: 'MANEFE,MSZFGE'}
+- name: button_1
+  properties: {text: Back, background: '#0876E8', foreground: black, icon: 'fa:angle-double-left'}
+  type: Button
+  layout_properties: {grid_position: 'OUVTKF,INTWBV'}
 - name: submit
   properties: {text: SUBMIT, background: '#0876E8', foreground: black, bold: false}
   type: Button
