@@ -51,4 +51,5 @@ class check_out_form(check_out_formTemplate):
     # Any code you write here will run before the form opens.
 
   def submit_click(self, **event_args):
-   open_form('bank_users.borrower_rgistration_form.new_loan_request')
+    alert('your data was submitted')
+    open_form('bank_users.borrower_rgistration_form')
