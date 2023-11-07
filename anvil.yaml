@@ -11,7 +11,7 @@ services:
 - source: /runtime/services/google.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: bank_users.borrower_rgistration_form.new_loan_request}
+startup: {type: form, module: bank_users.main_form}
 package_name: bank_client
 allow_embedding: false
 name: P2p Bank
@@ -122,41 +122,35 @@ db_schema:
     - name: usertype
       admin_ui: {order: 30, width: 200}
       type: string
-    - name: max_amount
-      admin_ui: {width: 200}
-      type: string
-    - name: min_amount
-      admin_ui: {width: 200}
-      type: string
     - name: aadhaar_no
-      admin_ui: {width: 200, order: 28}
+      admin_ui: {order: 14, width: 200}
       type: string
-    - name: tenure
-      admin_ui: {width: 200, order: 17.5}
-      type: string
+    - name: user_age
+      admin_ui: {width: 200, order: 7.5}
+      type: number
     title: user_profile
   borrower:
     title: borrower
     client: none
     server: full
     columns:
-    - name: borrower_id
-      admin_ui: {width: 200, order: 0}
-      type: number
     - name: email_id
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: coustmer_id
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: user_name
       admin_ui: {width: 200, order: 2}
       type: string
-    - name: loan_type
-      admin_ui: {width: 200}
-      type: string
-    - name: status
-      admin_ui: {width: 200}
-      type: bool
-    - name: last_confirm
-      admin_ui: {width: 200}
-      type: bool
-    - name: coustmer_id
-      admin_ui: {width: 200}
+    - name: max_ammount
+      admin_ui: {width: 200, order: 3}
+      type: number
+    - name: out_standing_amount
+      admin_ui: {width: 200, order: 4}
+      type: number
+    - name: loan_id
+      admin_ui: {width: 200, order: 5}
       type: number
   product_borrower:
     client: none
