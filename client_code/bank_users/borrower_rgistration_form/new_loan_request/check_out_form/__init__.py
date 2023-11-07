@@ -66,6 +66,10 @@ class check_out_form(check_out_formTemplate):
     alert('your data was submitted')
     open_form('bank_users.borrower_rgistration_form')
 
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('bank_users.borrower_rgistration_form.new_loan_request.k12_loan')
+
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     open_form('bank_users.borrower_rgistration_form')

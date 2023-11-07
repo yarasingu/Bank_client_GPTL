@@ -63,3 +63,10 @@ def add_user_profile(min_amount, tenure,max_amount):
     max_amount=max_amount
   
   )
+
+@anvil.server.callable
+def calculate_processing_fee(minimum_amount, tenure):
+    # Define your processing fee calculation logic here
+    processing_fee_percentage = 0.05  # 5% processing fee
+    processing_fee = minimum_amount * processing_fee_percentage * tenure
+    return processing_fee
