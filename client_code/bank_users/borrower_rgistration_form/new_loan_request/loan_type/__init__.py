@@ -27,13 +27,13 @@ class loan_type(loan_typeTemplate):
  
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    alert('submitted')
+    open_form('bank_users.borrower_rgistration_form.new_loan_request.check_out_form')
 
   def drop_down_1_change(self, **event_args):
 
     value=self.drop_down_1.selected_value 
     if value=="K-12 Educational loan":
-      open_form('bank_users.borrower_registration_main_form.new_loan_request.k12_loan')
+      open_form('bank_users.borrower_rgistration_form.new_loan_request.k12_loan')
     else:
-      open_form('bank_users.borrower_registration_main_form.new_loan_request.business_loan')
+      open_form('bank_users.borrower_rgistration_form.new_loan_request.business_loan')
   
