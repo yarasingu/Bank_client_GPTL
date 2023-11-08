@@ -175,4 +175,9 @@ db_schema:
       admin_ui: {width: 200, order: 1}
       type: number
     title: product_borrower
+  loan_details:
+    client: none
+    server: full
+    columns: []
+    title: loan_details
 renamed: true
