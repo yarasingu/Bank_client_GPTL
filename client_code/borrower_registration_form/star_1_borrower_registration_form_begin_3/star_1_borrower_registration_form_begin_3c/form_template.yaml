@@ -47,7 +47,7 @@ components:
     border: ''
     enabled: true
     foreground: ''
-    items: [Self, Business, Employee]
+    items: [Select Profession, Self, Business, Employee]
     visible: true
     font_size: null
     font: ''

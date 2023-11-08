@@ -16,9 +16,9 @@ components:
   event_bindings: {click: home_borrower_registration_form_click}
 - name: label_1_copy_1_copy_1_copy_1
   properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
-    visible: true, text: 'Confirm Your Registration   ', font_size: null, font: '',
-    spacing_above: small, icon_align: left, spacing_below: small, italic: false, background: '',
-    bold: true, underline: true, icon: ''}
+    visible: true, text: 'Confirm Your Details   ', font_size: null, font: '', spacing_above: small,
+    icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+    underline: true, icon: ''}
   type: Label
   layout_properties: {grid_position: 'TILNLI,CFVZSX'}
 - name: label_2_copy_1_copy_1

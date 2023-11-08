@@ -25,7 +25,7 @@ class star_1_borrower_registration_form_begin_3c(star_1_borrower_registration_fo
   def Profesion_borrower_registration_form_drop_down_change(self, **event_args):
     profession =self.Profesion_borrower_registration_form_drop_down.selected_value
     user_Id = self.userId
-    if profession == 'Self Employee':
+    if profession == 'Self':
       anvil.server.call('add_borrower_step3c',profession,user_Id)
       open_form('borrower_registration_form.borrower_registration_checkout_form',user_id=user_Id)
     elif profession == 'Business':
