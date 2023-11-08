@@ -48,8 +48,6 @@ class main_form(main_formTemplate):
           open_form('bank_users.user_form')
 
 
-
-  
   #form maping no need to change 
   def about_main_form_link_click(self, **event_args):
     open_form('bank_users.main_form.about_main_form')
