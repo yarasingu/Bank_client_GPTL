@@ -22,9 +22,6 @@ class star_1_borrower_registration_form_begin_4(star_1_borrower_registration_for
   def submit_4_borrower_registration_form_click(self, **event_args):
     open_form('borrower_registration_form.star_1_borrower_registration_form_begin_5',userId=user_id)
 
-  def button_1_click(self, **event_args):
-    open_form()
-
  
     
     

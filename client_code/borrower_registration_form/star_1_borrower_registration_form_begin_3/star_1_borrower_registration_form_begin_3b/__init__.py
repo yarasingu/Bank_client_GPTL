@@ -28,5 +28,5 @@ class star_1_borrower_registration_form_begin_3b(star_1_borrower_registration_fo
     if not  mother_tounge:
       Notification("please enter you details").show()
     else:
-      @anvil.server.call('',mother_tounge,user_id)
-      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3.star_1_borrower_registration_form_begin_3c',user_Id=user_id)
+      @anvil.server.call('add_borrower_step3b',mother_tounge,user_id)
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3.star_1_borrower_registration_form_begin_3c')
