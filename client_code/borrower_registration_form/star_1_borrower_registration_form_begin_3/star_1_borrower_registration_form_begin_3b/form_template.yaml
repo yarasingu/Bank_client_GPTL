@@ -28,7 +28,7 @@ components:
     underline: false, icon: ''}
   type: Label
   layout_properties: {grid_position: 'CJDOQG,OEJRUX'}
-- name: borrower_registration_spouse_name_text_copy_4
+- name: mother_tongue_text
   properties: {role: null, align: left, hide_text: false, tooltip: '', placeholder: '',
     border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
     font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
@@ -82,6 +82,7 @@ components:
     foreground: black, bold: true}
   type: Button
   layout_properties: {grid_position: 'UDHDUE,LWLFNE'}
+  event_bindings: {click: button_1_copy_1_click}
 - name: button_2_copy_1_copy_1
   properties: {text: next, icon: 'fa:angle-double-right', background: '#0876E8', align: left,
     foreground: black, bold: true}

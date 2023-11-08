@@ -17,3 +17,6 @@ class star_1_borrower_registration_form_begin_3c(star_1_borrower_registration_fo
 
   def home_borrower_registration_form_copy_1_click(self, **event_args):
     open_form('bank_users.user_form')
+
+  def button_1_copy_1_copy_1_click(self, **event_args):
+    open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3.star_1_borrower_registration_form_begin_3b')

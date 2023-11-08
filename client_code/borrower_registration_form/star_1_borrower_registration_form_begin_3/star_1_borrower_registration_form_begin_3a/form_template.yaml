@@ -82,6 +82,7 @@ components:
     foreground: black, bold: true}
   type: Button
   layout_properties: {grid_position: 'RFDUEU,MJDLBI'}
+  event_bindings: {click: button_1_click}
 - name: button_2_copy_1
   properties: {text: next, icon: 'fa:angle-double-right', background: '#0876E8', align: left,
     foreground: black, bold: true}
