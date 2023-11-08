@@ -60,6 +60,7 @@ components:
     include_placeholder: false
   type: DropDown
   layout_properties: {grid_position: 'CJDOQG,GWTJQD'}
+  event_bindings: {change: Profesion_borrower_registration_form_drop_down_change}
 - name: button_1_copy_1_copy_1
   properties: {text: prev, background: '#0876E8', icon: 'fa:angle-double-left', align: right,
     foreground: black, bold: true}

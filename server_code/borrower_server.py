@@ -44,6 +44,7 @@ def add_borrower_step3a(father_name,mother_name,father_age,mother_age,user_id):
     row[0]['father_age']=father_age
     row[0]['mother_age']=mother_age
 
+
 @anvil.server.callable
 def add_borrower_step3b(mother_tounge,user_id):
   row = app_tables.user_profile.search(coustmer_id=user_id)
