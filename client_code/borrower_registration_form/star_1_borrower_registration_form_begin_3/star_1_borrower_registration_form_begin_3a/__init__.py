@@ -31,4 +31,4 @@ class star_1_borrower_registration_form_begin_3a(star_1_borrower_registration_fo
       Notification("please fill all the requred fields").show()
     else:
       anvil.server.call('add_borrower_step3a',father_name,mother_name,father_age,mother_age,user_Id)
-      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3.star_1_borrower_registration_form_begin_3b',userId=user_Id)
+      open_form('borrower_registration_form.star_1_borrower_registration_form_begin_3.star_1_borrower_registration_form_begin_3b',user_id=user_Id)

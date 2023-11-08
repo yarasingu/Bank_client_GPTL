@@ -96,6 +96,7 @@ components:
     foreground: black, bold: true}
   type: Button
   layout_properties: {grid_position: 'CDBLHM,YTESTB'}
+  event_bindings: {click: prev_borrower_button_click}
 - name: checkout_borrower_submit_button
   properties: {role: elevated-button, align: left, tooltip: '', border: '', enabled: true,
     foreground: black, visible: true, text: Submit, font_size: null, font: '', spacing_above: small,
